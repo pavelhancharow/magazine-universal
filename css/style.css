@@ -691,7 +691,9 @@ template {
 }
 
 .news {
+  position: relative;
   background-color: #E5E5E5;
+  padding-bottom: 36px;
 }
 
 .news-grid {
@@ -805,6 +807,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 30px;
 }
 
 .tabs-content__about_circle {
@@ -918,7 +921,6 @@ template {
           justify-content: center;
   width: 138px;
   height: 40px;
-  margin-right: 30px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -1426,6 +1428,49 @@ template {
 .side-bar__button {
   font-size: 14px;
   line-height: 20px;
+  color: #ffffff;
+}
+
+.bloom-bg {
+  position: absolute;
+  bottom: -270px;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 270px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/flower-bg.png);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/flower-bg.png);
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #141114;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateY(-265px);
+          transform: translateY(-265px);
+}
+
+.bloom-bg__title {
+  max-width: 782px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
