@@ -1,0 +1,128 @@
+.newsfeed
+  padding-top: 60px
+  padding-bottom: 60px
+  background-color: $grey
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat()
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+  &-cards
+    grid-column: 1 / 10
+    grid-row: 1 / 7
+    padding: 0 25px
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light
+  &-card
+    display: flex
+    padding-top: 25px
+    padding-bottom: 25px
+    &:not(:last-child)
+      border-bottom: 1px solid #D9DADB
+    &__img
+      width: 336px
+      height: 195px
+      margin-right: 25px
+    &__content
+      position: relative
+      flex-direction: column
+      width: 437px
+      &::after
+        content: ""
+        position: absolute
+        display: flex
+        top: 0
+        right: 0
+        width: 20px
+        height: 20px
+        background-image: url(../img/svg/bookmark.svg)
+      &_save
+        &::after
+          content: ""
+          position: absolute
+          display: flex
+          top: 0
+          right: 0
+          width: 20px
+          height: 20px
+          background-image: url(../img/svg/bookmark-red.svg)
+    &__group
+      display: block
+      margin-top: 7px
+      margin-bottom: 15px
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+    &__title
+      margin-bottom: 10px
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: #262D33
+    &__about
+      margin-bottom: 20px
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__feedback
+      display: flex
+      align-items: center
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+      &_date
+        margin-right: 11px
+      &_comments
+        margin-left: 5px
+        margin-right: 10px
+      &_like
+        margin-left: 5px
+  &-column
+    grid-column: 10 / 13
+    grid-row: 1 / 4
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light
+    &__header
+      padding-top: 25px
+      padding-left: 25px
+      padding-bottom: 19px
+      border-bottom: 1px solid $grey15
+    &__main
+      padding: 0 25px
+      &_card
+        display: flex
+        padding: 17px 0
+        &:not(:last-child)
+          border-bottom: 1px solid $grey15
+      &_img
+        width: 60px
+        height: 60px
+        margin-right: 10px
+      &_content
+        display: flex
+        flex-direction: column
+      &_title
+        margin-bottom: 4px
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $grey85
+      &_time
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $grey50
+    &__footer
+      padding-top: 11px
+      padding-bottom: 14px
+      border-top: 1px solid $grey15
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      color: $grey100
