@@ -1,0 +1,92 @@
+.hero
+  padding-top: 60px
+  padding-bottom: 60px
+  width: 100%
+  height: 590px
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/bike-bg.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+    &__group
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $blue
+    &__nav
+      display: flex
+      align-items: center
+      &_back
+        display: flex
+        align-items: center
+        margin-right: 30px
+      &_main
+        margin-left: 5px
+        font-size: 14px
+        line-height: 20px
+        color: $light
+      &_prev
+        display: flex
+        align-items: center
+        margin-right: 20px
+      &_left
+        margin-left: 5px
+        font-size: 14px
+        line-height: 20px
+        color: $light
+      &_next
+        display: flex
+        align-items: center
+      &_right
+        margin-right: 5px
+        font-size: 14px
+        line-height: 20px
+        color: $light
+  &-title
+    max-width: 750px
+    margin-bottom: 30px
+    font-weight: bold
+    font-size: 55px
+    line-height: 70px
+    color: $light
+  &-text
+    max-width: 556px
+    margin-bottom: 60px
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: $light
+    mix-blend-mode: normal
+    opacity: 0.85
+  &-about
+    display: flex
+    align-items: center
+    &__span
+      margin-left: 5px
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.85
+      &:not(:last-of-type)
+        margin-right: 20px
+    &__share
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 143px
+      height: 40px
+      margin-left: 30px
+      border: 1px solid rgba($light, 0.4)
+      border-radius: 20px
+      &_num
+        margin-left: 10px
+        font-size: 14px
+        line-height: 20px
+        color: $light
