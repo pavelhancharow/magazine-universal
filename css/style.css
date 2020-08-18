@@ -2845,4 +2845,59 @@ template {
   background-color: transparent;
   cursor: pointer;
 }
+
+.articles {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background-color: #F5F5F5;
+}
+
+.articles-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.articles-block {
+  max-width: 263px;
+}
+
+.articles-block__img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.articles-block__title {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.articles-block__feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles-block__feedback_span {
+  margin-left: 5px;
+  margin-right: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
 /*# sourceMappingURL=style.css.map */
