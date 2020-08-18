@@ -1,0 +1,147 @@
+.comments
+  padding-top: 90px
+  padding-bottom: 30px
+  &-header
+    display: flex
+    align-items: center
+    &__title
+      margin-right: 10px
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $grey100
+    &__num
+      font-weight: normal
+      font-size: 40px
+      line-height: 50px
+      text-transform: uppercase
+      color: $grey50
+    &__link
+      display: flex
+      align-items: center
+      padding-left: 20px
+      padding-right: 24px
+      margin-left: auto
+      height: 40px
+      font-size: 14px
+      line-height: 20px
+      color: $grey100
+      border: 1px solid $grey15
+      border-radius: 20px
+    &__img
+      margin-right: 10px
+  &-item
+    margin-top: 29px
+    &__list
+      display: flex
+      flex-basis: 100%
+      flex-wrap: wrap
+      padding-top: 20px
+      padding-bottom: 29px
+      border-top: 1px solid $grey15
+      border-right: 1px solid transparent
+      &_reply
+        padding-left: 90px
+        flex-wrap: nowrap
+    &__img
+      margin-right: 15px
+    &__description
+      max-width: 570px
+      &_name
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: $grey100
+      &_date
+        margin-left: 10px
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $grey50
+      &_message
+        margin-bottom: 15px
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: $grey85
+      &_feedback
+        display: flex
+        align-items: center
+  &-button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 50px
+    margin-bottom: 60px
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    color: $grey100
+    border: 1px solid $grey15
+    border-radius: 25px
+    background-color: transparent
+    &__img
+      margin-right: 7px
+  &-message
+    position: relative
+    padding: 30px 40px 35px 125px
+    background-color: $grey05
+    border-radius: 10px
+    &__user
+      position: absolute
+      top: 70px
+      left: 30px
+    &__title
+      margin-bottom: 15px
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $grey100
+  &-form
+    position: relative
+    width: 585px
+    &__textarea
+      width: 100%
+      height: 130px
+      margin-bottom: 15px
+      border: 1px solid $grey15
+      border-radius: 5px
+      resize: none
+    &__submit
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 115px
+      height: 40px
+      background-color: $blue
+      border-radius: 20px
+      color: $light
+      &_img
+        margin-left: 5px
+.reply
+  margin-left: 5px
+  margin-right: 15px
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  color: $grey100
+.num
+  margin: 0 10px
+  font-size: 12px
+  line-height: 15px
+  color: $grey50
+  &-plus
+    color: $green
+  &-min
+    color: $red
+.delta
+  position: absolute
+  top: 35px
+  left: -12px
+  width: 0
+  height: 0
+  border-top: 10px solid transparent
+  border-right: 12px solid #D9DADB
+  border-bottom: 10px solid transparent
+  background-color: #F5F5F5
