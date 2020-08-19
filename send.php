@@ -98,5 +98,5 @@ try {
   }
 
    // Отображение результата
-  header('Location: index.html');
+  header('Location: article.html');
 }

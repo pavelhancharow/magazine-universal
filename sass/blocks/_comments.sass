@@ -104,10 +104,12 @@
     &__textarea
       width: 100%
       height: 130px
+      padding: 10px
       margin-bottom: 15px
       border: 1px solid $grey15
       border-radius: 5px
       resize: none
+      outline: none
     &__submit
       display: flex
       align-items: center
@@ -145,3 +147,13 @@
   border-right: 12px solid #D9DADB
   border-bottom: 10px solid transparent
   background-color: #F5F5F5
+  &::before
+    content: ""
+    position: absolute
+    top: -10px
+    left: 2px
+    width: 0
+    height: 0
+    border-top: 10px solid transparent
+    border-right: 12px solid #ffffff
+    border-bottom: 10px solid transparent

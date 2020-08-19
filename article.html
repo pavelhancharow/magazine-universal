@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magazine Universal</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -514,9 +516,9 @@
         <div class="comments-message">
           <img src="img/columns/alexandara-green.png" alt="user: user" class="user75 comments-message__user">
           <h3 class="comments-message__title">What do you think?</h3>
-          <form action="#" class="comments-form">
-            <textarea name="" id="" class="comments-form__textarea"></textarea>
-            <button class="comments-form__submit button">Submit<img src="img/svg/arrow-right.svg"
+          <form action="send.php" method="POST" class="comments-form">
+            <textarea name="message" class="comments-form__textarea"></textarea>
+            <button class="comments-form__submit button" name="appeal">Submit<img src="img/svg/arrow-right.svg"
                 alt="icon: arrow right" class="comments-form__submit_img"></button>
             <div class="delta"></div>
           </form>
@@ -534,9 +536,11 @@
       <div class="footer-wrapper">
         <div class="footer-subscribe">
           <h2 class="footer-subscribe__title">Subscribe now and get 20% off</h2>
-          <form action="#" class="footer-subscribe__form">
-            <input type="email" placeholder="Enter your email" class="footer-subscribe__input">
-            <button class="footer-subscribe__button" value="Subsribe">Subsribe</button>
+          <form action="send.php" method="POST" class="footer-subscribe__form">
+            <div class="input-group">
+              <input type="email" name="email" placeholder="Enter your email" class="footer-subscribe__input" required>
+            </div>
+            <button class="footer-subscribe__button button" value="Subsribe" name="subscribe">Subscribe</button>
           </form>
         </div>
         <!-- /.footer-subscribe -->
@@ -644,6 +648,11 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <script src="script/jquery-3.5.1.slim.min.js"></script>
+  <script src="script/jquery.fancybox.min.js"></script>
+  <script src="script/swiper-bundle.min.js"></script>
+  <script src="script/jquery.validate.min.js"></script>
+  <script src="script/main.js"></script>
 </body>
 
 </html>
