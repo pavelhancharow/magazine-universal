@@ -15,14 +15,20 @@
   &-pic
     width: 877px
     height: 570px
-    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/england-bg.png)
   &-content
-    display: flex
+    display: none
     flex-direction: column
+    width: 100%
     height: 100%
     padding-top: 55px
     padding-left: 55px
     padding-bottom: 95px
+    &__visible
+      display: flex
+    &__food
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/england-bg.png)
+    &__cars
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/mustang-bg.jpg)
     &__author
       display: flex
       align-items: center
@@ -76,6 +82,7 @@
     height: 100%
     max-width: 263px
     flex-grow: 1
+    border-left: 1px solid $light
     &__block
       display: flex
       align-items: center
@@ -93,8 +100,18 @@
       &:last-of-type
         padding-bottom: 29px
       &_active
-        // border-left:
+        position: relative
         background-color: #F5F5F5
+        &::before
+          content: ""
+          position: absolute
+          top: 39px
+          left: -13px
+          width: 0
+          height: 0
+          border-top: 10px solid transparent
+          border-right: 12px solid $light
+          border-bottom: 10px solid transparent
 .description
   &-author
     font-weight: normal
@@ -159,16 +176,13 @@
     &__nfl
       color: #FFA34D
   &-title
-    position: relative
     font-weight: normal
     font-size: 14px
     line-height: 20px
     color: #4B5157
     &__play
-      position: absolute
-      bottom: 0
-      right: 60px
-      margin-left: 5px
+      vertical-align: middle
+      margin-left: 2px
 .cars
   grid-row: 2 / 3
   grid-column: 1 / 7
@@ -457,3 +471,5 @@
     line-height: 50px
     text-align: center
     color: $light
+.tab
+  cursor: pointer

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magazine Universal</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -109,7 +110,7 @@
       <div class="news-grid">
         <div class="tabs news-card">
           <div class="tabs-pic">
-            <div class="tabs-content visible">
+            <div class="tabs-content tabs-content__visible tabs-content__food" id="food">
               <div class="tabs-content__author">
                 <img src="img/benjamin-turner.png" alt="treveler: Benjamin Turner" class="tabs-content__user">
                 <div class="tabs-content__description">
@@ -126,8 +127,9 @@
                       class="arrow-right">
                   </a>
                   <div class="tabs-content__about_play">
-                    <div class="tabs-content__about_circle button"><img src="img/svg/play.svg" alt="icon: play">
-                    </div>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=qqfSeb7e_ek"
+                      class="tabs-content__about_circle button"><img src="img/svg/play.svg" alt="icon: play">
+                    </a>
                     <!-- /.tabs-content__about_circle -->
                     <div class="tabs-content__about_track">
                       <strong class="track-title">The chalk cliff of Beachy Head</strong>
@@ -141,6 +143,28 @@
               <!-- /.tabs-content__about -->
             </div>
             <!-- /.tabs-content -->
+            <div class="tabs-content tabs-content__cars" id="cars">
+              <div class="tabs-content__author">
+                <img src="img/columns/david-williams.png" alt="driver: David Williams" class="tabs-content__user">
+                <div class="tabs-content__description">
+                  <strong class="description-author">By David Williams</strong>
+                  <span class="description-prof">Driver</span>
+                </div>
+              </div>
+              <!-- /.tabs-content__description -->
+              <div class="tabs-content__about">
+                <span class="tabs-content__about_subtitle">Cars</span>
+                <h2 class="tabs-content__about_title">New Ford Mustang Mach 1 is here</h2>
+                <div class="tabs-content__about_buttoms">
+                  <a href="#" class="button button-read">Read more <img src="img/svg/arrow-button.svg" alt="icon: arrow"
+                      class="arrow-right">
+                  </a>
+                </div>
+                <!-- /.tabs-content__about_buttoms -->
+              </div>
+              <!-- /.tabs-content__about -->
+            </div>
+            <!-- /.tabs-content -->
           </div>
           <!-- /.tabs-pic -->
           <div class="tabs-recomended">
@@ -148,33 +172,33 @@
               <h3 class="recomended-title">Recommended for you</h3>
             </div>
             <!-- /.tabs-recomended__block -->
-            <div class="tabs-recomended__card tabs-recomended__card_active">
+            <div class="tab tabs-recomended__card tabs-recomended__card_active" data-target="#food">
               <h3 class="card-group card-group__food">Food</h3>
               <span class="card-title">For Chicken-Fried Steak, Too Much Is Just Enough<img src="img/svg/play-dark.svg"
-                  alt="icon: play" class="card-title__play button">
+                  alt="icon: play" class="card-title__play">
               </span>
             </div>
             <!-- /.tabs-recomended__card -->
-            <div class="tabs-recomended__card">
+            <div class="tab tabs-recomended__card" data-target="#cars">
               <h3 class="card-group card-group__cars">Cars</h3>
               <span class="card-title">Storm Has Car Dealers Doing Swift Business
               </span>
             </div>
             <!-- /.tabs-recomended__card -->
-            <div class="tabs-recomended__card">
+            <div class="tab tabs-recomended__card">
               <h3 class="card-group card-group__movies">Movies</h3>
               <span class="card-title">War Is Hell? In New Military Dramas, It’s One-Dimensional
               </span>
             </div>
             <!-- /.tabs-recomended__card -->
-            <div class="tabs-recomended__card">
+            <div class="tab tabs-recomended__card">
               <h3 class="card-group card-group__nfl">NFL</h3>
               <span class="card-title">11 surprising stat rankings for active NFL players<img
-                  src="img/svg/play-dark.svg" alt="icon: play" class="card-title__play button">
+                  src="img/svg/play-dark.svg" alt="icon: play" class="card-title__play">
               </span>
             </div>
             <!-- /.tabs-recomended__card -->
-            <div class="tabs-recomended__card">
+            <div class="tab tabs-recomended__card">
               <h3 class="card-group card-group__movies">Tech Reviews</h3>
               <span class="card-title">The bookcases you can buy online and assemble yourself
               </span>
@@ -740,6 +764,9 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <script src="script/jquery-3.5.1.slim.min.js"></script>
+  <script src="script/jquery.fancybox.min.js"></script>
+  <script src="script/main.js"></script>
 </body>
 
 </html>
