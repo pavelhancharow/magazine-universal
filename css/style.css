@@ -124,6 +124,15 @@ ul {
   border-radius: 50%;
 }
 
+.invalid {
+  position: absolute;
+  left: 10px;
+  bottom: -18px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF4F52;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1995,6 +2004,27 @@ template {
   grid-row: 3 / 4;
 }
 
+.swiper-container {
+  width: 555px;
+  height: 570px;
+}
+
+.swiper-pagination-bullets {
+  bottom: 49px !important;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 8px !important;
+  width: 8px;
+  height: 8px;
+  background: #D9DADB;
+}
+
+.swiper-pagination-bullet-active {
+  margin: 0 8px !important;
+  background: #ffffff;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 55px;
@@ -2036,11 +2066,19 @@ template {
   color: #262D33;
 }
 
+.footer-subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-subscribe__input {
-  width: 313px;
-  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 0 15px;
-  margin-right: 10px;
   border: 1px solid #D9DADB;
   border-radius: 5px;
   font-weight: normal;
@@ -2247,6 +2285,13 @@ template {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #262D33;
+}
+
+.input-group {
+  position: relative;
+  width: 313px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .hero {

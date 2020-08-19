@@ -12,6 +12,38 @@ $(document).ready(function () {
 
   save.on('click', function () {
     $(this).toggleClass('newsfeed-card__content_save');
-  })
+  });
+
+  //initialize swiper when document ready
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    speed: 400,
+    autoplay: {
+      delay: 3000,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  //validation
+  $('.footer-subscribe__form').validate({
+    errorClass: "invalid",
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      email: {
+        required: "* Enter your email address",
+        email: "* Must be name@domain.com"
+      }
+    }
+  });
 });
 

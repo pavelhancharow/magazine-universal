@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magazine Universal</title>
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -621,20 +622,95 @@
     <div class="container">
       <div class="information-wrapper">
         <div class="information-block information-block__slider">
-          <div class="information-block__slide1">
-            <img src="img/information/sarah-jenkins-2.png" alt="photographer: Sarah Jenkins"
-              class="information-block__slide1_img">
-            <strong class="information-block__slide1_author">By Sarah Jenkins</strong>
-            <span class="information-block__slide1_job">Photographer</span>
-            <h2 class="information-block__slide1_title">Readers' Choice winners: Your wine country favorites</h2>
-            <a href="#" class="information-block__link">
-              <img src="img/svg/images.svg" alt="icon: images">
-              <span class="information-block__link_text">Watch photos </span>
-              <span class="information-block__link_num">26</span>
-            </a>
-            <div class="information-block__slide1_pagination">pagination</div>
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="information-block__slide1">
+                  <img src="img/information/sarah-jenkins-2.png" alt="photographer: Sarah Jenkins"
+                    class="information-block__slide1_img">
+                  <strong class="information-block__slide1_author">By Sarah Jenkins</strong>
+                  <span class="information-block__slide1_job">Photographer</span>
+                  <h2 class="information-block__slide1_title">Readers' Choice winners: Your wine country favorites</h2>
+                  <a href="#" class="information-block__link">
+                    <img src="img/svg/images.svg" alt="icon: images">
+                    <span class="information-block__link_text">Watch photos </span>
+                    <span class="information-block__link_num">26</span>
+                  </a>
+                </div>
+                <!-- /.information-block__slide1 -->
+              </div>
+              <div class="swiper-slide">
+                <div class="information-block__slide1">
+                  <img src="img/information/sarah-jenkins-2.png" alt="photographer: Sarah Jenkins"
+                    class="information-block__slide1_img">
+                  <strong class="information-block__slide1_author">By Sarah Jenkins</strong>
+                  <span class="information-block__slide1_job">Photographer</span>
+                  <h2 class="information-block__slide1_title">Readers' Choice winners: Your wine country favorites</h2>
+                  <a href="#" class="information-block__link">
+                    <img src="img/svg/images.svg" alt="icon: images">
+                    <span class="information-block__link_text">Watch photos </span>
+                    <span class="information-block__link_num">26</span>
+                  </a>
+                </div>
+                <!-- /.information-block__slide1 -->
+              </div>
+              <div class="swiper-slide">
+                <div class="information-block__slide1">
+                  <img src="img/information/sarah-jenkins-2.png" alt="photographer: Sarah Jenkins"
+                    class="information-block__slide1_img">
+                  <strong class="information-block__slide1_author">By Sarah Jenkins</strong>
+                  <span class="information-block__slide1_job">Photographer</span>
+                  <h2 class="information-block__slide1_title">Readers' Choice winners: Your wine country favorites</h2>
+                  <a href="#" class="information-block__link">
+                    <img src="img/svg/images.svg" alt="icon: images">
+                    <span class="information-block__link_text">Watch photos </span>
+                    <span class="information-block__link_num">26</span>
+                  </a>
+                </div>
+                <!-- /.information-block__slide1 -->
+              </div>
+              <div class="swiper-slide">
+                <div class="information-block__slide1">
+                  <img src="img/information/sarah-jenkins-2.png" alt="photographer: Sarah Jenkins"
+                    class="information-block__slide1_img">
+                  <strong class="information-block__slide1_author">By Sarah Jenkins</strong>
+                  <span class="information-block__slide1_job">Photographer</span>
+                  <h2 class="information-block__slide1_title">Readers' Choice winners: Your wine country favorites</h2>
+                  <a href="#" class="information-block__link">
+                    <img src="img/svg/images.svg" alt="icon: images">
+                    <span class="information-block__link_text">Watch photos </span>
+                    <span class="information-block__link_num">26</span>
+                  </a>
+                </div>
+                <!-- /.information-block__slide1 -->
+              </div>
+              <div class="swiper-slide">
+                <div class="information-block__slide1">
+                  <img src="img/information/sarah-jenkins-2.png" alt="photographer: Sarah Jenkins"
+                    class="information-block__slide1_img">
+                  <strong class="information-block__slide1_author">By Sarah Jenkins</strong>
+                  <span class="information-block__slide1_job">Photographer</span>
+                  <h2 class="information-block__slide1_title">Readers' Choice winners: Your wine country favorites</h2>
+                  <a href="#" class="information-block__link">
+                    <img src="img/svg/images.svg" alt="icon: images">
+                    <span class="information-block__link_text">Watch photos </span>
+                    <span class="information-block__link_num">26</span>
+                  </a>
+                </div>
+                <!-- /.information-block__slide1 -->
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
           </div>
-          <!-- /.information-block__slide1 -->
+          <!-- /.swiper-container -->
         </div>
         <!-- /.information-block__slider -->
         <div class="information-block information-block__career">
@@ -671,9 +747,11 @@
       <div class="footer-wrapper">
         <div class="footer-subscribe">
           <h2 class="footer-subscribe__title">Subscribe now and get 20% off</h2>
-          <form action="#" class="footer-subscribe__form">
-            <input type="email" placeholder="Enter your email" class="footer-subscribe__input">
-            <button class="footer-subscribe__button" value="Subsribe">Subsribe</button>
+          <form action="send.php" method="POST" class="footer-subscribe__form">
+            <div class="input-group">
+              <input type="email" name="email" placeholder="Enter your email" class="footer-subscribe__input" required>
+            </div>
+            <button class="footer-subscribe__button button" value="Subsribe" name="subscribe">Subscribe</button>
           </form>
         </div>
         <!-- /.footer-subscribe -->
@@ -783,6 +861,8 @@
   <!-- /.footer -->
   <script src="script/jquery-3.5.1.slim.min.js"></script>
   <script src="script/jquery.fancybox.min.js"></script>
+  <script src="script/swiper-bundle.min.js"></script>
+  <script src="script/jquery.validate.min.js"></script>
   <script src="script/main.js"></script>
 </body>
 
