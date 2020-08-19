@@ -29,8 +29,7 @@
       position: relative
       flex-direction: column
       width: 437px
-      &::after
-        content: ""
+      &_button
         position: absolute
         display: flex
         top: 0
@@ -38,16 +37,12 @@
         width: 20px
         height: 20px
         background-image: url(../img/svg/bookmark.svg)
+        background-color: transparent
+        border: none
+        outline: none
+        cursor: pointer
       &_save
-        &::after
-          content: ""
-          position: absolute
-          display: flex
-          top: 0
-          right: 0
-          width: 20px
-          height: 20px
-          background-image: url(../img/svg/bookmark-red.svg)
+        background-image: url(../img/svg/bookmark-red.svg)
     &__group
       display: block
       margin-top: 7px
@@ -61,7 +56,7 @@
       font-weight: bold
       font-size: 20px
       line-height: 25px
-      color: #262D33
+      color: $grey100
     &__about
       margin-bottom: 20px
       font-weight: normal
@@ -89,9 +84,15 @@
     overflow: hidden
     background-color: $light
     &__header
-      padding-top: 25px
+      padding-top: 18px
       padding-left: 25px
       padding-bottom: 19px
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $grey100
       border-bottom: 1px solid $grey15
     &__main
       padding: 0 25px
@@ -105,6 +106,7 @@
         height: 60px
         margin-right: 10px
       &_content
+        position: relative
         display: flex
         flex-direction: column
       &_title
@@ -118,6 +120,14 @@
         font-size: 12px
         line-height: 15px
         color: $grey50
+      &_num
+        position: absolute
+        top: 5px
+        right: 0
+        font-size: 70px
+        line-height: 50px
+        color: $grey100
+        opacity: 0.08
     &__footer
       padding-top: 11px
       padding-bottom: 14px

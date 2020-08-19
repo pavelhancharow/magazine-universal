@@ -1608,8 +1608,7 @@ template {
   width: 437px;
 }
 
-.newsfeed-card__content::after {
-  content: "";
+.newsfeed-card__content_button {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1619,18 +1618,13 @@ template {
   width: 20px;
   height: 20px;
   background-image: url(../img/svg/bookmark.svg);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.newsfeed-card__content_save::after {
-  content: "";
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
+.newsfeed-card__content_save {
   background-image: url(../img/svg/bookmark-red.svg);
 }
 
@@ -1699,9 +1693,15 @@ template {
 }
 
 .newsfeed-column__header {
-  padding-top: 25px;
+  padding-top: 18px;
   padding-left: 25px;
   padding-bottom: 19px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
   border-bottom: 1px solid #D9DADB;
 }
 
@@ -1727,6 +1727,7 @@ template {
 }
 
 .newsfeed-column__main_content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1749,6 +1750,16 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #939699;
+}
+
+.newsfeed-column__main_num {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 70px;
+  line-height: 50px;
+  color: #262D33;
+  opacity: 0.08;
 }
 
 .newsfeed-column__footer {
