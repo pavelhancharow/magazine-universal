@@ -49,8 +49,8 @@ try {
         $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
     }
 
-// Отображение результата
-// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+   // Отображение результата
+  header('Location: index.html');
 } else if (isset($_POST['appeal'])) {
   // Переменные, которые отправляет пользователь
   $message = $_POST['message'];
@@ -96,4 +96,7 @@ try {
       $result = "error";
       $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
   }
+
+   // Отображение результата
+  header('Location: index.html');
 }
