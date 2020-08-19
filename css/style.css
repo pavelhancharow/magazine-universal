@@ -811,11 +811,11 @@ template {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  height: 570px;
 }
 
 .tabs-pic {
   width: 877px;
-  height: 570px;
 }
 
 .tabs-content {
@@ -845,6 +845,21 @@ template {
 .tabs-content__cars {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/mustang-bg.jpg);
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/mustang-bg.jpg);
+}
+
+.tabs-content__movies {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/rojo-bg.jpg);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/rojo-bg.jpg);
+}
+
+.tabs-content__nfl {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/nfl-bg.jpg);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/nfl-bg.jpg);
+}
+
+.tabs-content__tech {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/tech-bg.jpg);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/tech-bg.jpg);
 }
 
 .tabs-content__author {
@@ -889,7 +904,7 @@ template {
 
 .tabs-content__about_title {
   margin-bottom: 40px;
-  max-width: 598px;
+  max-width: 645px;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
