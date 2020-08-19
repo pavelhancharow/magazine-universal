@@ -30,7 +30,7 @@ try {
     $mail->Password   = 'B3fI9jd1'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('besttour.plan@gmail.com', 'Best Tour Plan Admin'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('besttour.plan@gmail.com', 'Universal Admin'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('pl.hancharou@gmail.com');
