@@ -13,7 +13,7 @@
     &__slider
       grid-column: 1 / 7
       grid-row: 1 / 4
-    &__slide1
+    &__slide
       position: relative
       display: flex
       flex-direction: column
@@ -23,22 +23,8 @@
       padding: 0 50px
       padding-top: 50px
       padding-bottom: 40px
-      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/information/boat.png)
-      &::before
-        content: "Hot"
-        position: absolute
-        display: flex
-        align-items: center
-        justify-content: center
-        width: 45px
-        height: 25px
-        top: 18px
-        left: 18px
-        font-size: 12px
-        line-height: 15px
-        color: #FFFFFF
-        border-radius: 3px
-        background-color: $red
+      border-radius: 10px
+      overflow: hidden
       &_img
         width: 45px
         height: 45px
@@ -71,13 +57,38 @@
         width: 108px
         height: 20px
         color: $light
+    &__slide1
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/wood-bg.jpg)
+    &__slide2
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/boat-bg.png)
+      &::before
+        content: "Hot"
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 45px
+        height: 25px
+        top: 18px
+        left: 18px
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        border-radius: 3px
+        background-color: $red
+    &__slide3
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/street-bg.jpg)
+    &__slide4
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/bus-bg.jpg)
+    &__slide5
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/camera-bg.jpg)
     &__link
       display: flex
       align-items: center
       justify-content: center
       width: 185px
       height: 40px
-      margin-bottom: 105px
+      padding: 10px 0
       border-radius: 20px
       background: $blue
       &_text
