@@ -3132,6 +3132,10 @@ template {
   border-right: 1px solid transparent;
 }
 
+.comments-item__list_hidden {
+  display: none;
+}
+
 .comments-item__list_reply {
   padding-left: 90px;
   -ms-flex-wrap: nowrap;
