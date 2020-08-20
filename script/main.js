@@ -15,7 +15,7 @@ $(document).ready(function () {
   });
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper('.swiper-container', {
+  var informationSlider = new Swiper('.information-block__slider', {
     // Optional parameters
     loop: true,
     speed: 400,
@@ -27,6 +27,22 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       clickable: true,
     },
+  });
+
+  var paragraphSwiper = new Swiper('.paragraph-photos__swiper', {
+    // Optional parameters
+    loop: true,
+    speed: 400,
+
+    navigation: {
+      nextEl: '.paragraph-button__next',
+      prevEl: '.paragraph-button__prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
   });
 
   //validation

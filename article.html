@@ -195,7 +195,25 @@
     <div class="paragraph-photos">
       <div class="container">
         <div class="paragraph-photos__slider">
-          <img src="img/slider/mountains.png" alt="image: mountains" class="paragraph-photos__img">
+          <div class="swiper-container paragraph-photos__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/slider/mountains.png" alt="image: mountains">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider/mountains.png" alt="image: mountains">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider/mountains.png" alt="image: mountains">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="paragraph-button paragraph-button__prev"></button>
+            <button class="paragraph-button paragraph-button__next"></button>
+          </div>
+          <!-- /.swiper-container -->
           <div class="paragraph-photos__about">
             <span class="paragraph-photos__about_span">Geostatistics deal with quantitative data analysis, specifically
               the
@@ -214,8 +232,6 @@
             <!-- /.paragraph-photos__author -->
           </div>
           <!-- /.paragraph-photos__about -->
-          <button class="paragraph-button paragraph-button__prev"></button>
-          <button class="paragraph-button paragraph-button__next"></button>
         </div>
         <!-- /.paragraph-photos__slider -->
       </div>
