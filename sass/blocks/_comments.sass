@@ -102,10 +102,12 @@
     position: relative
     width: 585px
     &__textarea
+      position: absolute
+      top: 0
+      left: 0
       width: 100%
-      height: 130px
-      padding: 10px
-      margin-bottom: 15px
+      height: 100%
+      padding: 15px
       border: 1px solid $grey15
       border-radius: 5px
       resize: none
@@ -157,3 +159,9 @@
     border-top: 10px solid transparent
     border-right: 12px solid #ffffff
     border-bottom: 10px solid transparent
+.textarea
+  &-group
+    position: relative
+    width: 100%
+    height: 130px
+    margin-bottom: 15px

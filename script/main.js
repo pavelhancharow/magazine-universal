@@ -46,20 +46,30 @@ $(document).ready(function () {
   });
 
   //validation
-  $('.footer-subscribe__form').validate({
-    errorClass: "invalid",
-    rules: {
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    messages: {
-      email: {
-        required: "* Enter your email address",
-        email: "* Must be name@domain.com"
-      }
-    }
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true,
+          minlength: 100
+        }
+      },
+      messages: {
+        email: {
+          required: "* Enter your email address",
+          email: "* Must be name@domain.com"
+        },
+        message: {
+          required: "* Enter your message",
+          minlength: "* More than 100 letters long",
+        }
+      },
+    });
   });
 });
 
