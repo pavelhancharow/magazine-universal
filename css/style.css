@@ -743,13 +743,13 @@ template {
   height: 100%;
 }
 
-.verbung {
+.ads {
   padding-top: 30px;
   padding-bottom: 315px;
   background-color: #262D33;
 }
 
-.verbung-list {
+.ads-list {
   padding: 25px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,15 +761,15 @@ template {
   background-color: #30363D;
 }
 
-.verbung-list__item {
+.ads-list__item {
   padding: 0 25px;
 }
 
-.verbung-list__item:not(:last-of-type) {
+.ads-list__item:not(:last-of-type) {
   border-right: 1px solid #4B5157;
 }
 
-.verbung-list__link {
+.ads-list__link {
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,7 +779,7 @@ template {
           align-items: center;
 }
 
-.verbung__strong {
+.ads__strong {
   width: 154px;
   height: 75px;
   margin-right: 14px;
