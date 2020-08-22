@@ -2132,10 +2132,10 @@ template {
 
 .footer-subscribe__title {
   margin-bottom: 25px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  text-align: center;
   color: #262D33;
 }
 
@@ -2154,19 +2154,30 @@ template {
   padding: 0 15px;
   border: 1px solid #D9DADB;
   border-radius: 5px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #939699;
   outline: none;
+}
+
+.footer-subscribe__input::-webkit-input-placeholder {
+  color: #939699;
+}
+
+.footer-subscribe__input:-ms-input-placeholder {
+  color: #939699;
+}
+
+.footer-subscribe__input::-ms-input-placeholder {
+  color: #939699;
+}
+
+.footer-subscribe__input::placeholder {
+  color: #939699;
 }
 
 .footer-subscribe__button {
   width: 119px;
   height: 40px;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #ffffff;
   border-radius: 20px;
   background: #4592FF;
@@ -2192,7 +2203,7 @@ template {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
 }
 
 .footer-menu__group {
@@ -2207,8 +2218,7 @@ template {
 
 .footer-menu__title {
   margin-bottom: 25px;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
 }
 
@@ -2217,10 +2227,7 @@ template {
 }
 
 .footer-menu__link {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
+  color: inherit;
 }
 
 .footer-menu__news {
@@ -2261,7 +2268,7 @@ template {
 
 .footer-social {
   width: 100%;
-  height: 109px;
+  height: 111px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / 13;
@@ -2301,6 +2308,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 5px;
 }
 
 .footer-social__icons_link:not(:last-child) {
@@ -2329,16 +2337,10 @@ template {
 
 .footer-copyright__text {
   max-width: 750px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #939699;
 }
 
 .footer-copyright__magazine {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #939699;
 }
 
@@ -2353,8 +2355,7 @@ template {
 }
 
 .block-item__link {
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #262D33;
