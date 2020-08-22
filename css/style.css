@@ -540,11 +540,8 @@ template {
 
 .header-top__description {
   margin-left: 15px;
-  color: #262D33;
   font-family: 'Lato-Heavy', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
+  color: #262D33;
 }
 
 .header-top__search {
@@ -691,7 +688,6 @@ template {
 }
 
 .subscribe-subtitle {
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -796,7 +792,7 @@ template {
   height: 75px;
   margin-right: 14px;
   font-family: 'Roboto Slab', serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 25px;
 }
@@ -1107,13 +1103,6 @@ template {
   color: #FFA34D;
 }
 
-.card-title {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
-}
-
 .card-title__play {
   vertical-align: middle;
   margin-left: 4px;
@@ -1193,10 +1182,6 @@ template {
 
 .cars-content__content {
   margin-bottom: 49px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .cars-content__author {
@@ -1219,9 +1204,6 @@ template {
 .cars-content__name {
   margin-right: 6px;
   font-family: 'Lato-Heavy', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
   color: #262D33;
 }
 
@@ -1230,7 +1212,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -1274,7 +1255,6 @@ template {
   width: 66px;
   height: 25px;
   font-family: 'Lato-Heavy', sans-serif;
-  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
@@ -1331,12 +1311,7 @@ template {
 }
 
 .art-content__name {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.85;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .art-content__comments {
@@ -1350,12 +1325,9 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 136px;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.4;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .info-block {
@@ -1731,7 +1703,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: normal;
   margin-bottom: 5px;
   font-size: 12px;
   line-height: 15px;
@@ -1768,7 +1739,6 @@ template {
   padding-left: 25px;
   padding-bottom: 19px;
   font-family: 'Lato-Heavy', sans-serif;
-  font-weight: bold;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -1824,7 +1794,6 @@ template {
   top: 5px;
   right: 0;
   font-family: 'Lato-HeavyItalic', sans-serif;
-  font-style: italic;
   font-size: 70px;
   line-height: 50px;
   color: rgba(38, 45, 51, 0.08);
@@ -1835,9 +1804,6 @@ template {
   padding-bottom: 14px;
   border-top: 1px solid #D9DADB;
   font-family: 'Lato-Heavy', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
   text-align: center;
   color: #262D33;
 }
@@ -1912,7 +1878,6 @@ template {
   top: 19px;
   left: 18px;
   font-family: 'Lato-Heavy', sans-serif;
-  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
@@ -2006,8 +1971,6 @@ template {
 .information-block__link_text {
   margin-right: 5px;
   font-family: 'Lato-Heavy', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
   color: #ffffff;
 }
 
