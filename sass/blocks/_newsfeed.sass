@@ -1,7 +1,7 @@
 .newsfeed
   padding-top: 60px
   padding-bottom: 60px
-  background-color: $grey
+  background-color: $lightgrey
   &-wrapper
     display: grid
     grid-template-columns: repeat(12, 1fr)
@@ -18,9 +18,9 @@
   &-card
     display: flex
     padding-top: 25px
-    padding-bottom: 25px
+    padding-bottom: 24px
     &:not(:last-child)
-      border-bottom: 1px solid #D9DADB
+      border-bottom: 1px solid $grey15
     &__img
       width: 336px
       height: 195px
@@ -46,31 +46,39 @@
         background-image: url(../img/svg/bookmark-red.svg)
     &__group
       display: block
-      margin-top: 7px
+      margin-top: 5px
       margin-bottom: 15px
       font-size: 12px
       line-height: 15px
       letter-spacing: 0.5px
       text-transform: uppercase
+      &_flights
+        color: $blue
+      &_food,
+      &_health
+        color: $bluegreen
+      &_science
+        color: $red
+      &_design
+        color: $purple
     &__title
       margin-bottom: 10px
-      font-weight: bold
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
       font-size: 20px
       line-height: 25px
       color: $grey100
     &__about
-      font-weight: normal
-      font-size: 14px
-      line-height: 20px
-      color: #4B5157
+      margin-top: auto
+      margin-bottom: 20px
     &__feedback
       display: flex
       align-items: center
       font-weight: normal
-      margin-top: auto
+      margin-bottom: 5px
       font-size: 12px
       line-height: 15px
-      color: #939699
+      color: $grey50
       &_date
         margin-right: 11px
       &_comments
@@ -85,9 +93,10 @@
     overflow: hidden
     background-color: $light
     &__header
-      padding-top: 18px
+      padding-top: 20px
       padding-left: 25px
       padding-bottom: 19px
+      font-family: 'Lato-Heavy', sans-serif
       font-weight: bold
       font-size: 14px
       line-height: 20px
@@ -112,12 +121,7 @@
         flex-direction: column
       &_title
         margin-bottom: 4px
-        font-weight: normal
-        font-size: 14px
-        line-height: 20px
-        color: $grey85
       &_time
-        font-weight: normal
         font-size: 12px
         line-height: 15px
         color: $grey50
@@ -125,14 +129,17 @@
         position: absolute
         top: 5px
         right: 0
+        font-family: 'Lato-HeavyItalic', sans-serif
+        font-style: italic
         font-size: 70px
         line-height: 50px
-        color: $grey100
-        opacity: 0.08
+        color: rgba($grey100, 0.08)
     &__footer
       padding-top: 11px
       padding-bottom: 14px
       border-top: 1px solid $grey15
+      font-family: 'Lato-Heavy', sans-serif
+      font-weight: bold
       font-size: 14px
       line-height: 20px
       text-align: center

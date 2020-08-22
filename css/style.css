@@ -27,6 +27,13 @@
 }
 
 @font-face {
+  font-family: 'Lato-HeavyItalic';
+  src: url("../fonts/Lato-HeavyItalic.woff") format("woff"), url("../fonts/Lato-HeavyItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Lato-Bold';
   src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: normal;
@@ -1600,7 +1607,7 @@ template {
 .newsfeed {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #E5E5E5;
+  background-color: #EDEFF0;
 }
 
 .newsfeed-wrapper {
@@ -1632,7 +1639,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .newsfeed-card:not(:last-child) {
@@ -1679,7 +1686,7 @@ template {
 
 .newsfeed-card__group {
   display: block;
-  margin-top: 7px;
+  margin-top: 5px;
   margin-bottom: 15px;
   font-size: 12px;
   line-height: 15px;
@@ -1687,19 +1694,34 @@ template {
   text-transform: uppercase;
 }
 
+.newsfeed-card__group_flights {
+  color: #4592FF;
+}
+
+.newsfeed-card__group_food, .newsfeed-card__group_health {
+  color: #3BBDC4;
+}
+
+.newsfeed-card__group_science {
+  color: #FF4F52;
+}
+
+.newsfeed-card__group_design {
+  color: #AC8EE3;
+}
+
 .newsfeed-card__title {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #262D33;
 }
 
 .newsfeed-card__about {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 .newsfeed-card__feedback {
@@ -1710,7 +1732,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   font-weight: normal;
-  margin-top: auto;
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -1742,9 +1764,10 @@ template {
 }
 
 .newsfeed-column__header {
-  padding-top: 18px;
+  padding-top: 20px;
   padding-left: 25px;
   padding-bottom: 19px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 20px;
@@ -1788,14 +1811,9 @@ template {
 
 .newsfeed-column__main_title {
   margin-bottom: 4px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .newsfeed-column__main_time {
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -1805,16 +1823,19 @@ template {
   position: absolute;
   top: 5px;
   right: 0;
+  font-family: 'Lato-HeavyItalic', sans-serif;
+  font-style: italic;
   font-size: 70px;
   line-height: 50px;
-  color: #262D33;
-  opacity: 0.08;
+  color: rgba(38, 45, 51, 0.08);
 }
 
 .newsfeed-column__footer {
   padding-top: 11px;
   padding-bottom: 14px;
   border-top: 1px solid #D9DADB;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-weight: bold;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
