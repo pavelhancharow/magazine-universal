@@ -1,6 +1,6 @@
 .news
   position: relative
-  background-color: #E5E5E5
+  background-color: $grey
   padding-bottom: 40px
   &-grid
     display: grid
@@ -16,6 +16,7 @@
   &-pic
     width: 877px
   &-content
+    position: relative
     display: none
     flex-direction: column
     width: 100%
@@ -23,34 +24,44 @@
     padding-top: 55px
     padding-left: 55px
     padding-bottom: 95px
+    background-position: center
+    background-repeat: no-repeat
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
     &__visible
       display: flex
     &__food
-      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/england-bg.png)
+      background-image: url(../img/bg/england-bg.png)
     &__cars
-      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/mustang-bg.jpg)
+      background: url(../img/bg/mustang-bg.jpg)
     &__movies
-      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/rojo-bg.jpg)
+      background: url(../img/bg/rojo-bg.jpg)
     &__nfl
-      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/nfl-bg.jpg)
+      background: url(../img/bg/nfl-bg.jpg)
     &__tech
-      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/tech-bg.jpg)
+      background: url(../img/bg/tech-bg.jpg)
     &__author
       display: flex
       align-items: center
+      z-index: 10
     &__user
-      width: 45px
-      height: 45px
-      border-radius: 50%
       margin-right: 10px
     &__description
       display: flex
       flex-direction: column
     &__about
       margin-top: auto
+      z-index: 10
       &_subtitle
         display: block
         margin-bottom: 25px
+        font-family: 'Lato-Heavy', sans-serif
         font-size: 12px
         line-height: 15px
         letter-spacing: 0.5px
@@ -59,7 +70,8 @@
       &_title
         margin-bottom: 40px
         max-width: 645px
-        font-weight: bold
+        font-family: 'Roboto Slab', serif
+        font-weight: 700
         font-size: 40px
         line-height: 50px
         color: $light
@@ -75,13 +87,13 @@
         justify-content: center
         width: 50px
         height: 50px
+        margin-right: 9px
         border-radius: 50%
         border: 2px solid rgba($light, 0.4)
       &_track
         display: flex
         flex-direction: column
-        padding-top: 8px
-        padding-left: 9px
+        padding-top: 6px
   &-recomended
     display: flex
     flex-direction: column
@@ -120,38 +132,23 @@
           border-bottom: 10px solid transparent
 .description
   &-author
-    font-weight: normal
-    font-size: 14px
-    line-height: 20px
-    color: $light
-    mix-blend-mode: normal
-    opacity: 0.85
+    color: rgba($light, 0.85)
   &-prof
-    font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: $light
-    opacity: 0.4
+    color: rgba($light, 0.4)
 .track
   &-title
-    font-weight: normal
-    font-size: 14px
-    line-height: 20px
-    color: $light
-    mix-blend-mode: normal
-    opacity: 0.85
+    color: rgba($light, 0.85)
   &-time
-    font-weight: normal
     font-size: 12px
-    line-height: 15px
-    color: $light
-    mix-blend-mode: normal
-    opacity: 0.4
+    color: rgba($light, 0.4)
 .recomended
   &-title
+    font-family: 'Lato-Heavy', sans-serif
     font-size: 14px
     line-height: 20px
-    color: $dark
+    color: $grey100
     letter-spacing: 0.5px
     text-transform: uppercase
 .card
@@ -162,21 +159,21 @@
     letter-spacing: 0.5px
     text-transform: uppercase
     &__food
-      color: #3BBDC4
+      color: $bluegreen
     &__cars
-      color: #4B5157
+      color: $grey75
     &__movies
-      color: #AC8EE3
+      color: $purple
     &__nfl
-      color: #FFA34D
+      color: $orange
   &-title
     font-weight: normal
     font-size: 14px
     line-height: 20px
-    color: #4B5157
+    color: $grey85
     &__play
       vertical-align: middle
-      margin-left: 2px
+      margin-left: 4px
 .cars
   position: relative
   grid-row: 2 / 3
@@ -211,19 +208,19 @@
       line-height: 15px
       letter-spacing: 0.5px
       text-transform: uppercase
-      color: #6E99AE
+      color: $grey75
     &__title
       margin-bottom: 25px
       font-weight: bold
       font-size: 25px
       line-height: 30px
-      color: #262D33
+      color: $grey100
     &__content
       margin-bottom: 49px
       font-weight: normal
       font-size: 14px
       line-height: 20px
-      color: #4B5157
+      color: $grey85
     &__author
       width: 30px
       height: 30px
@@ -236,24 +233,24 @@
       font-weight: normal
       font-size: 14px
       line-height: 20px
-      color: #4B5157
+      color: $grey85
     &__name
       font-weight: bold
       font-size: 14px
       line-height: 20px
-      color: #262D33
+      color: $grey100
     &__comment
       margin-left: 5px
       align-items: center
       font-weight: normal
       font-size: 12px
       line-height: 15px
-      color: #939699
+      color: $grey50
   &-line
     margin-bottom: 12px
     width: 100%
     height: 1px
-    background-color: #D9DADB
+    background-color: $grey15
 .art
   position: relative
   grid-column: 7 / 10
@@ -273,9 +270,9 @@
     height: 25px
     font-size: 12px
     line-height: 15px
-    color: #FFFFFF
+    color: $light
     border-radius: 3px
-    background-color: #3DC47E
+    background-color: $green
   &-block
     margin-top: auto
   &-content
@@ -286,7 +283,7 @@
       line-height: 15px
       letter-spacing: 0.5px
       text-transform: uppercase
-      color: #E7D9FF
+      color: $purple25
     &__title
       width: 203px
       margin-bottom: 15px
@@ -335,7 +332,7 @@
     font-weight: bold
     font-size: 16px
     line-height: 25px
-    color: #262D33
+    color: $grey100
 .article
   &-first
     grid-row: 3 / 4
@@ -354,26 +351,26 @@
     font-weight: bold
     font-size: 16px
     line-height: 25px
-    color: #262D33
+    color: $grey100
   &__content
     margin-bottom: 10px
     max-width: 213px
     font-weight: normal
     font-size: 14px
     line-height: 20px
-    color: #4B5157
+    color: $grey85
   &__date
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: #939699
+    color: $grey50
 .side
   &-bar
     grid-row: 2 / 5
     grid-column: 10 / 13
     display: flex
     flex-direction: column
-    background-color: #6E99AE
+    background-color: $grey75
     &__top
       padding: 20px 0 19px 25px
       border-bottom: 1px solid $greyblue
