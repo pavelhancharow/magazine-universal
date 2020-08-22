@@ -116,6 +116,26 @@ ul {
   background-color: #ffffff;
 }
 
+.article__title {
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.article__content {
+  margin-bottom: 10px;
+  max-width: 213px;
+}
+
+.article__date {
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
 .news-card {
   border-radius: 10px;
   overflow: hidden;
@@ -781,8 +801,8 @@ template {
 
 .news {
   position: relative;
-  background-color: #E5E5E5;
-  padding-bottom: 40px;
+  background-color: #EDEFF0;
+  padding-bottom: 45px;
 }
 
 .news-grid {
@@ -1157,7 +1177,8 @@ template {
 
 .cars-content__title {
   margin-bottom: 25px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
@@ -1174,7 +1195,7 @@ template {
 .cars-content__author {
   width: 30px;
   height: 30px;
-  margin-right: 7px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
@@ -1185,14 +1206,12 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 6px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
+  margin-right: 15px;
 }
 
 .cars-content__name {
+  margin-right: 6px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 20px;
@@ -1243,10 +1262,12 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 19px;
+  top: 18px;
   left: 18px;
   width: 66px;
   height: 25px;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
@@ -1255,11 +1276,18 @@ template {
 }
 
 .art-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 203px;
   margin-top: auto;
 }
 
 .art-content__group {
-  display: block;
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 15px;
@@ -1269,9 +1297,9 @@ template {
 }
 
 .art-content__title {
-  width: 203px;
   margin-bottom: 15px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.5px;
@@ -1330,6 +1358,14 @@ template {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 29px;
   background-color: #ffffff;
 }
 
@@ -1339,8 +1375,10 @@ template {
 }
 
 .info-content {
-  padding: 15px 25px 30px;
-  font-weight: bold;
+  margin-top: auto;
+  padding: 0 25px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
@@ -1380,30 +1418,6 @@ template {
   -ms-grid-column: 7;
   -ms-grid-column-span: 3;
   grid-column: 7 / 10;
-}
-
-.article__title {
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 25px;
-  color: #262D33;
-}
-
-.article__content {
-  margin-bottom: 10px;
-  max-width: 213px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
-}
-
-.article__date {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #939699;
 }
 
 .side-bar {
@@ -1452,7 +1466,7 @@ template {
 
 .side-bar__item {
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 23px;
 }
 
 .side-bar__list {
@@ -1488,7 +1502,8 @@ template {
 
 .side-bar__list_title {
   margin-bottom: 15px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
@@ -1523,15 +1538,13 @@ template {
 }
 
 .side-bar__name {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  color: #D1E2EB;
 }
 
 .side-bar__prof {
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: #D1E2EB;
 }
 
 .side-bar__button {
@@ -1560,23 +1573,20 @@ template {
           justify-content: center;
   width: 100%;
   height: 270px;
-  margin: 0 auto;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/flower-bg.png);
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/flower-bg.png);
   background-position: center;
-  background-size: 95%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #141114;
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-transform: translateY(-265px);
           transform: translateY(-265px);
 }
 
 .bloom-bg__title {
-  max-width: 782px;
+  max-width: 778px;
   margin-bottom: 25px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   text-align: center;

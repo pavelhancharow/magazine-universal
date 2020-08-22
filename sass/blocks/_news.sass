@@ -1,7 +1,7 @@
 .news
   position: relative
-  background-color: $grey
-  padding-bottom: 40px
+  background-color: $lightgrey
+  padding-bottom: 45px
   &-grid
     display: grid
     grid-template-columns: repeat(12, 1fr)
@@ -211,7 +211,8 @@
       color: $grey75
     &__title
       margin-bottom: 25px
-      font-weight: bold
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
       font-size: 25px
       line-height: 30px
       color: $grey100
@@ -224,17 +225,15 @@
     &__author
       width: 30px
       height: 30px
-      margin-right: 7px
+      margin-right: 10px
       border-radius: 50%
     &__about
       display: flex
       align-items: center
-      margin-right: 6px
-      font-weight: normal
-      font-size: 14px
-      line-height: 20px
-      color: $grey85
+      margin-right: 15px
     &__name
+      margin-right: 6px
+      font-family: 'Lato-Heavy', sans-serif
       font-weight: bold
       font-size: 14px
       line-height: 20px
@@ -264,20 +263,24 @@
     display: flex
     align-items: center
     justify-content: center
-    top: 19px
+    top: 18px
     left: 18px
     width: 66px
     height: 25px
+    font-family: 'Lato-Heavy', sans-serif
+    font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $light
     border-radius: 3px
     background-color: $green
   &-block
+    display: flex
+    flex-direction: column
+    max-width: 203px
     margin-top: auto
   &-content
     &__group
-      display: block
       margin-bottom: 10px
       font-size: 12px
       line-height: 15px
@@ -285,9 +288,9 @@
       text-transform: uppercase
       color: $purple25
     &__title
-      width: 203px
       margin-bottom: 15px
-      font-weight: bold
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
       font-size: 16px
       line-height: 25px
       letter-spacing: 0.5px
@@ -323,13 +326,18 @@
   &-block
     grid-row: 3 / 5
     grid-column: 1 / 4
+    display: flex
+    flex-direction: column
+    padding-bottom: 29px
     background-color: $light
   &-image
     width: 263px
     height: 275px
   &-content
-    padding: 15px 25px 30px
-    font-weight: bold
+    margin-top: auto
+    padding: 0 25px
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
     font-size: 16px
     line-height: 25px
     color: $grey100
@@ -346,24 +354,6 @@
   &-fours
     grid-row: 4 / 5
     grid-column: 7 / 10
-  &__title
-    margin-bottom: 5px
-    font-weight: bold
-    font-size: 16px
-    line-height: 25px
-    color: $grey100
-  &__content
-    margin-bottom: 10px
-    max-width: 213px
-    font-weight: normal
-    font-size: 14px
-    line-height: 20px
-    color: $grey85
-  &__date
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    color: $grey50
 .side
   &-bar
     grid-row: 2 / 5
@@ -388,7 +378,7 @@
       color: $light
     &__item
       padding-left: 25px
-      padding-right: 25px
+      padding-right: 23px
     &__list
       position: relative
       display: flex
@@ -411,7 +401,8 @@
         opacity: 0.75
       &_title
         margin-bottom: 15px
-        font-weight: bold
+        font-family: 'Roboto Slab', serif
+        font-weight: 700
         font-size: 20px
         line-height: 25px
         color: $light
@@ -429,13 +420,11 @@
       flex-direction: column
       color: #D1E2EB
     &__name
-      font-weight: normal
-      font-size: 14px
-      line-height: 20px
+      color: $greyblue25
     &__prof
-      font-weight: normal
       font-size: 12px
       line-height: 15px
+      color: $greyblue25
     &__button
       font-size: 14px
       line-height: 20px
@@ -451,18 +440,16 @@
   justify-content: center
   width: 100%
   height: 270px
-  margin: 0 auto
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/flower-bg.png)
   background-position: center
-  background-size: 95%
+  background-size: 100%
   background-repeat: no-repeat
-  background-color: rgb(20, 17, 20)
-  object-fit: cover
   transform: translateY(-265px)
   &__title
-    max-width: 782px
+    max-width: 778px
     margin-bottom: 25px
-    font-weight: bold
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
     font-size: 40px
     line-height: 50px
     text-align: center
