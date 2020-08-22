@@ -5,8 +5,41 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
 }
 
 .container {
@@ -494,8 +527,9 @@ template {
 }
 
 .header-top__description {
-  margin-left: 13px;
+  margin-left: 15px;
   color: #262D33;
+  font-family: 'Lato-Heavy', sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 20px;
@@ -510,53 +544,43 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 20px;
-  margin-left: 26px;
+  margin-left: 25px;
 }
 
 .header-top__search_input {
   width: 350px;
   height: 100%;
-  padding-left: 28px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  padding-left: 30px;
+  font-family: 'Lato-Regular', sans-serif;
   color: #939699;
   border: none;
   outline: none;
 }
 
 .header-top__search_input::-webkit-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Regular', sans-serif;
   color: #939699;
 }
 
 .header-top__search_input:-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Regular', sans-serif;
   color: #939699;
 }
 
 .header-top__search_input::-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Regular', sans-serif;
   color: #939699;
 }
 
 .header-top__search_input::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Regular', sans-serif;
   color: #939699;
 }
 
 .header-top__subscribe {
   position: absolute;
   bottom: -1px;
-  right: 129px;
+  right: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +594,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 84px;
+  padding-left: 30px;
 }
 
 .header-top__logo {
@@ -588,13 +613,6 @@ template {
   width: 292px;
 }
 
-.header-top__date {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
-}
-
 .header-top__weather {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,10 +624,6 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 74px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .header-bottom {
@@ -628,8 +642,7 @@ template {
 }
 
 .header-bottom__link {
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #ffffff;
@@ -655,12 +668,13 @@ template {
 
 .subscribe-description {
   margin-left: 10px;
+  padding-top: 4px;
 }
 
 .subscribe-title {
-  margin-top: 4px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 13px;
   color: #262D33;
 }
 
@@ -679,7 +693,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 114px;
+  width: 115px;
   height: 50px;
   border-right: 1px solid #E5E5E5;
   background-color: #ffffff;
@@ -707,9 +721,6 @@ template {
 
 .user__signin {
   margin-left: 10px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
 }
 
 .line {
@@ -728,16 +739,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 30px;
   width: 318px;
   height: 100%;
-}
-
-.secondary-description {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .verbung {
