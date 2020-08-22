@@ -779,13 +779,19 @@ template {
           align-items: center;
 }
 
-.ads__strong {
+.ads-list__link_strong {
   width: 154px;
   height: 75px;
   margin-right: 14px;
+  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
+}
+
+.ads-list__link_img {
+  width: 65px;
+  height: 65px;
 }
 
 .news {
