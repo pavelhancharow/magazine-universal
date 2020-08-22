@@ -1895,59 +1895,7 @@ template {
   overflow: hidden;
 }
 
-.information-block__slide_img {
-  width: 45px;
-  height: 45px;
-  margin-bottom: 8px;
-  border-radius: 50%;
-}
-
-.information-block__slide_author {
-  margin-bottom: 2px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.85;
-}
-
-.information-block__slide_job {
-  margin-bottom: 30px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.4;
-}
-
-.information-block__slide_title {
-  margin-bottom: 45px;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 50px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.information-block__slide_pagination {
-  width: 108px;
-  height: 20px;
-  color: #ffffff;
-}
-
-.information-block__slide1 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/wood-bg.jpg);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/wood-bg.jpg);
-}
-
-.information-block__slide2 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/boat-bg.png);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/boat-bg.png);
-}
-
-.information-block__slide2::before {
+.information-block__slide::before {
   content: "Hot";
   position: absolute;
   display: -webkit-box;
@@ -1961,28 +1909,77 @@ template {
           justify-content: center;
   width: 45px;
   height: 25px;
-  top: 18px;
+  top: 19px;
   left: 18px;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 3px;
   background-color: #FF4F52;
+  z-index: 10;
+}
+
+.information-block__slide::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+}
+
+.information-block__slide_img {
+  margin-bottom: 8px;
+  z-index: 10;
+}
+
+.information-block__slide_author {
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.85);
+  z-index: 10;
+}
+
+.information-block__slide_job {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.4);
+  z-index: 10;
+}
+
+.information-block__slide_title {
+  margin-bottom: 45px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.information-block__slide1 {
+  background: url(../img/bg/wood-bg.jpg);
+}
+
+.information-block__slide2 {
+  background: url(../img/bg/boat-bg.png);
 }
 
 .information-block__slide3 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/street-bg.jpg);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/street-bg.jpg);
+  background: url(../img/bg/street-bg.jpg);
 }
 
 .information-block__slide4 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/bus-bg.jpg);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/bus-bg.jpg);
+  background: url(../img/bg/bus-bg.jpg);
 }
 
 .information-block__slide5 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/camera-bg.jpg);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/camera-bg.jpg);
+  background: url(../img/bg/camera-bg.jpg);
 }
 
 .information-block__link {
@@ -1992,28 +1989,29 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 185px;
   height: 40px;
   padding: 10px 0;
+  padding-left: 20px;
+  padding-right: 25px;
   border-radius: 20px;
   background: #4592FF;
+  z-index: 10;
+}
+
+.information-block__link_img {
+  margin-right: 10px;
 }
 
 .information-block__link_text {
-  margin-left: 10px;
   margin-right: 5px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
 }
 
 .information-block__link_num {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #C5E4FC;
 }
 
@@ -2036,6 +2034,9 @@ template {
   padding-top: 35px;
   padding-left: 35px;
   background-image: url(../img/bg/woman-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .information-block__career_group {
@@ -2050,8 +2051,8 @@ template {
 .information-block__career_title {
   max-width: 243px;
   margin-bottom: 15px;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
@@ -2060,10 +2061,6 @@ template {
 .information-block__career_text {
   margin-bottom: 25px;
   max-width: 213px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .information-card__first {
@@ -2085,7 +2082,8 @@ template {
 }
 
 .swiper-pagination-bullets {
-  bottom: 49px !important;
+  bottom: 40px !important;
+  z-index: 10 !important;
 }
 
 .swiper-pagination-bullet {
