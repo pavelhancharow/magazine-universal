@@ -158,6 +158,12 @@ ul {
   height: 15px;
 }
 
+.user30 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
 .user45 {
   width: 45px;
   height: 45px;
@@ -1185,10 +1191,7 @@ template {
 }
 
 .cars-content__author {
-  width: 30px;
-  height: 30px;
   margin-right: 10px;
-  border-radius: 50%;
 }
 
 .cars-content__about {
@@ -1304,9 +1307,6 @@ template {
 }
 
 .art-content__author {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
   margin-right: 10px;
 }
 
@@ -1499,10 +1499,7 @@ template {
 }
 
 .side-bar__image {
-  width: 45px;
-  height: 45px;
   margin-right: 10px;
-  border-radius: 50%;
 }
 
 .side-bar__bio {
