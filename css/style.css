@@ -170,6 +170,12 @@ ul {
   border-radius: 50%;
 }
 
+.user60 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
 .user75 {
   width: 75px;
   height: 75px;
@@ -2852,10 +2858,7 @@ template {
 }
 
 .quote-author__img {
-  width: 60px;
-  height: 60px;
   margin-bottom: 10px;
-  border-radius: 50%;
 }
 
 .quote-author__name {
@@ -3036,17 +3039,16 @@ template {
 
 .comments-header__title {
   margin-right: 10px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   color: #262D33;
 }
 
 .comments-header__num {
-  font-weight: normal;
   font-size: 40px;
   line-height: 50px;
-  text-transform: uppercase;
   color: #939699;
 }
 
@@ -3058,11 +3060,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 20px;
-  padding-right: 24px;
+  padding-right: 25px;
   margin-left: auto;
   height: 40px;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
   border: 1px solid #D9DADB;
   border-radius: 20px;
@@ -3085,9 +3086,12 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 20px;
-  padding-bottom: 29px;
   border-top: 1px solid #D9DADB;
   border-right: 1px solid transparent;
+}
+
+.comments-item__list:not(:last-of-type) {
+  padding-bottom: 29px;
 }
 
 .comments-item__list_hidden {
@@ -3105,18 +3109,28 @@ template {
 }
 
 .comments-item__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 570px;
 }
 
 .comments-item__description_name {
-  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
 }
 
 .comments-item__description_date {
-  margin-left: 10px;
+  margin-left: 5px;
+  font-family: 'Lato-Regular', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -3125,10 +3139,8 @@ template {
 
 .comments-item__description_message {
   margin-bottom: 15px;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: #4B5157;
 }
 
 .comments-item__description_feedback {
@@ -3166,6 +3178,10 @@ template {
   margin-right: 7px;
 }
 
+.comments-button__text {
+  font-family: 'Lato-Heavy', sans-serif;
+}
+
 .comments-message {
   position: relative;
   padding: 30px 40px 35px 125px;
@@ -3181,7 +3197,8 @@ template {
 
 .comments-message__title {
   margin-bottom: 15px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #262D33;
@@ -3212,10 +3229,9 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 115px;
+  padding-left: 27px;
+  padding-right: 20px;
+  max-width: 115px;
   height: 40px;
   background-color: #4592FF;
   border-radius: 20px;
@@ -3228,8 +3244,8 @@ template {
 
 .reply {
   margin-left: 5px;
-  margin-right: 15px;
-  font-weight: bold;
+  margin-right: 16px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #262D33;
@@ -3237,6 +3253,7 @@ template {
 
 .num {
   margin: 0 10px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -3252,7 +3269,7 @@ template {
 
 .delta {
   position: absolute;
-  top: 35px;
+  top: 28px;
   left: -12px;
   width: 0;
   height: 0;

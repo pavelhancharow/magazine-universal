@@ -6,25 +6,23 @@
     align-items: center
     &__title
       margin-right: 10px
-      font-weight: bold
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
       font-size: 40px
       line-height: 50px
       color: $grey100
     &__num
-      font-weight: normal
       font-size: 40px
       line-height: 50px
-      text-transform: uppercase
       color: $grey50
     &__link
       display: flex
       align-items: center
       padding-left: 20px
-      padding-right: 24px
+      padding-right: 25px
       margin-left: auto
       height: 40px
-      font-size: 14px
-      line-height: 20px
+      font-family: 'Lato-Heavy', sans-serif
       color: $grey100
       border: 1px solid $grey15
       border-radius: 20px
@@ -37,9 +35,10 @@
       flex-basis: 100%
       flex-wrap: wrap
       padding-top: 20px
-      padding-bottom: 29px
       border-top: 1px solid $grey15
       border-right: 1px solid transparent
+      &:not(:last-of-type)
+        padding-bottom: 29px
       &_hidden
         display: none
       &_reply
@@ -48,24 +47,27 @@
     &__img
       margin-right: 15px
     &__description
+      display: flex
+      flex-direction: column
       max-width: 570px
       &_name
-        font-weight: bold
+        margin-bottom: 10px
+        font-family: 'Roboto Slab', serif
+        font-weight: 700
         font-size: 16px
         line-height: 25px
         color: $grey100
       &_date
-        margin-left: 10px
+        margin-left: 5px
+        font-family: 'Lato-Regular', sans-serif
         font-weight: normal
         font-size: 12px
         line-height: 15px
         color: $grey50
       &_message
         margin-bottom: 15px
-        font-weight: normal
         font-size: 18px
         line-height: 30px
-        color: $grey85
       &_feedback
         display: flex
         align-items: center
@@ -85,6 +87,8 @@
     background-color: transparent
     &__img
       margin-right: 7px
+    &__text
+      font-family: 'Lato-Heavy', sans-serif
   &-message
     position: relative
     padding: 30px 40px 35px 125px
@@ -96,7 +100,8 @@
       left: 30px
     &__title
       margin-bottom: 15px
-      font-weight: bold
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
       font-size: 20px
       line-height: 25px
       color: $grey100
@@ -117,8 +122,9 @@
     &__submit
       display: flex
       align-items: center
-      justify-content: center
-      width: 115px
+      padding-left: 27px
+      padding-right: 20px
+      max-width: 115px
       height: 40px
       background-color: $blue
       border-radius: 20px
@@ -127,13 +133,14 @@
         margin-left: 5px
 .reply
   margin-left: 5px
-  margin-right: 15px
-  font-weight: bold
+  margin-right: 16px
+  font-family: 'Lato-Heavy', sans-serif
   font-size: 12px
   line-height: 15px
   color: $grey100
 .num
   margin: 0 10px
+  font-family: 'Lato-Heavy', sans-serif
   font-size: 12px
   line-height: 15px
   color: $grey50
@@ -143,7 +150,7 @@
     color: $red
 .delta
   position: absolute
-  top: 35px
+  top: 28px
   left: -12px
   width: 0
   height: 0
