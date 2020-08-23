@@ -1643,6 +1643,8 @@ template {
   width: 20px;
   height: 20px;
   background-image: url(../img/svg/bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: transparent;
   border: none;
   outline: none;
@@ -1651,6 +1653,9 @@ template {
 
 .newsfeed-card__content_save {
   background-image: url(../img/svg/bookmark-red.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .newsfeed-card__group {
@@ -2340,6 +2345,27 @@ template {
   background-size: 100%;
 }
 
+.hero-bg {
+  position: relative;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 89px;
+  left: -97px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/svg/bookmark30.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
 .hero-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2377,13 +2403,12 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .hero-header__nav_main {
   margin-left: 5px;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #ffffff;
 }
 
@@ -2399,8 +2424,7 @@ template {
 
 .hero-header__nav_left {
   margin-left: 5px;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #ffffff;
 }
 
@@ -2415,15 +2439,14 @@ template {
 
 .hero-header__nav_right {
   margin-right: 5px;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #ffffff;
 }
 
 .hero-title {
   max-width: 750px;
   margin-bottom: 30px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
   font-size: 55px;
   line-height: 70px;
   color: #ffffff;
@@ -2432,12 +2455,9 @@ template {
 .hero-text {
   max-width: 556px;
   margin-bottom: 60px;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.85;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .hero-about {
@@ -2451,12 +2471,9 @@ template {
 
 .hero-about__span {
   margin-left: 5px;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.85;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .hero-about__span:not(:last-of-type) {
@@ -2470,20 +2487,18 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 143px;
+  padding-left: 20px;
+  padding-right: 25px;
+  max-width: 143px;
   height: 40px;
-  margin-left: 30px;
+  margin-left: 31px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
 }
 
 .hero-about__share_num {
-  margin-left: 10px;
-  font-size: 14px;
-  line-height: 20px;
+  margin-left: 8px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #ffffff;
 }
 

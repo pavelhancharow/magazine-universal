@@ -7,6 +7,21 @@
   background-repeat: no-repeat
   background-position: center
   background-size: 100%
+  &-bg
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      display: flex
+      top: 89px
+      left: -97px
+      width: 30px
+      height: 30px
+      background-image: url(../img/svg/bookmark30.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-color: transparent
+      opacity: 0.4
   &-header
     display: flex
     justify-content: space-between
@@ -24,11 +39,10 @@
       &_back
         display: flex
         align-items: center
-        margin-right: 30px
+        margin-right: 31px
       &_main
         margin-left: 5px
-        font-size: 14px
-        line-height: 20px
+        font-family: 'Lato-Heavy', sans-serif
         color: $light
       &_prev
         display: flex
@@ -36,57 +50,49 @@
         margin-right: 20px
       &_left
         margin-left: 5px
-        font-size: 14px
-        line-height: 20px
+        font-family: 'Lato-Heavy', sans-serif
         color: $light
       &_next
         display: flex
         align-items: center
       &_right
         margin-right: 5px
-        font-size: 14px
-        line-height: 20px
+        font-family: 'Lato-Heavy', sans-serif
         color: $light
   &-title
     max-width: 750px
     margin-bottom: 30px
-    font-weight: bold
+    font-family: 'Roboto Slab', serif
     font-size: 55px
     line-height: 70px
     color: $light
   &-text
     max-width: 556px
     margin-bottom: 60px
-    font-weight: normal
     font-size: 18px
     line-height: 30px
-    color: $light
-    mix-blend-mode: normal
-    opacity: 0.85
+    color: rgba($light, 0.85)
   &-about
     display: flex
     align-items: center
     &__span
       margin-left: 5px
-      font-weight: normal
       font-size: 12px
       line-height: 15px
-      color: $light
-      mix-blend-mode: normal
-      opacity: 0.85
+      color: rgba($light, 0.85)
       &:not(:last-of-type)
         margin-right: 20px
     &__share
       display: flex
       align-items: center
-      justify-content: center
-      width: 143px
+      padding-left: 20px
+      padding-right: 25px
+      max-width: 143px
       height: 40px
-      margin-left: 30px
+      margin-left: 31px
       border: 1px solid rgba($light, 0.4)
       border-radius: 20px
       &_num
-        margin-left: 10px
-        font-size: 14px
-        line-height: 20px
+        margin-left: 8px
+        font-family: 'Lato-Heavy', sans-serif
         color: $light
