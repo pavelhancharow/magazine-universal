@@ -1,8 +1,9 @@
 $(document).ready(function () {
   var tab = $('.tab');
   var save = $('.save');
-  var commentsButton = $('.comments-button')
+  var commentsButton = $('.comments-button');
   var hiddenComments = $('.comments-item__list_hidden');
+  var loadMore = $('.comments-button__img');
 
   tab.on('click', function () {
     tab.removeClass('tabs-recomended__card_active');
@@ -17,6 +18,8 @@ $(document).ready(function () {
   });
 
   commentsButton.on('click', function () {
+    commentsButton.removeClass('tabs-recomended__list_hidden');
+    $(loadMore).toggleClass('comments-button__img_rotate');
     $(hiddenComments).toggleClass('comments-item__list_hidden');
   });
 
