@@ -176,6 +176,12 @@ ul {
   border-radius: 50%;
 }
 
+.user90 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
 .invalid {
   position: absolute;
   left: 10px;
@@ -2512,7 +2518,6 @@ template {
 
 .paragraph-text {
   max-width: 623px;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: #4B5157;
@@ -2523,17 +2528,18 @@ template {
 }
 
 .paragraph-lead__first {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   max-width: 623px;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: #4B5157;
 }
 
 .paragraph-lead__first::first-letter {
   float: left;
+  margin-top: 7px;
+  margin-left: -7px;
   margin-right: 10px;
+  font-family: 'Lato-Heavy', sans-serif;
   font-size: 100px;
   line-height: 75px;
   color: #4592FF;
@@ -2554,7 +2560,7 @@ template {
   padding-bottom: 13px;
   position: absolute;
   top: -160px;
-  right: 0;
+  right: 1px;
   width: 263px;
   background-color: #ffffff;
   border: 1px solid #D9DADB;
@@ -2562,15 +2568,13 @@ template {
 }
 
 .paragraph-lead__img {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 15px;
-  border-radius: 50%;
+  margin-bottom: 14px;
 }
 
 .paragraph-lead__author {
   margin-bottom: 5px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #262D33;
@@ -2578,17 +2582,11 @@ template {
 
 .paragraph-lead__job {
   margin-bottom: 15px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .paragraph-lead__articles {
   margin-bottom: 25px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: bold;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
 }
 
@@ -2600,7 +2598,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 140px;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .paragraph-lead__line {
@@ -2611,20 +2609,18 @@ template {
 }
 
 .paragraph-lead__follow {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: bold;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
 }
 
 .paragraph-geography {
-  padding-bottom: 55px;
+  padding-bottom: 59px;
 }
 
 .paragraph-geography__title {
   margin-bottom: 30px;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
@@ -2632,7 +2628,7 @@ template {
 
 .paragraph-geography__part2 {
   padding-top: 45px;
-  padding-bottom: 56px;
+  padding-bottom: 80px;
 }
 
 .paragraph-geography__part3_line {
@@ -2670,19 +2666,12 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 70px;
-  padding-left: 35px;
+  padding-left: 33px;
   border: 1px solid #D9DADB;
   border-radius: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-top: 0px;
-}
-
-.paragraph-photos__about_span {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .paragraph-photos__author {
@@ -2715,15 +2704,7 @@ template {
           flex-direction: column;
 }
 
-.paragraph-photos__author_name {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
-}
-
 .paragraph-photos__author_job {
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -2761,7 +2742,7 @@ template {
 .memorial {
   position: absolute;
   right: 0;
-  bottom: 65px;
+  bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2777,8 +2758,8 @@ template {
 
 .memorial-group {
   margin-bottom: 20px;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #262D33;
@@ -2793,7 +2774,8 @@ template {
 
 .memorial-title {
   margin-bottom: 5px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
@@ -2801,10 +2783,6 @@ template {
 
 .memorial-about {
   margin-bottom: 20px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
 }
 
 .memorial-comments {
@@ -2814,7 +2792,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #939699;
@@ -2834,7 +2811,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 653px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .quote::before {
@@ -2852,7 +2829,8 @@ template {
 
 .quote-title {
   max-width: 463px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
@@ -2881,16 +2859,11 @@ template {
 }
 
 .quote-author__name {
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: #4B5157;
 }
 
 .quote-author__job {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #939699;
 }
 
@@ -2902,7 +2875,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 433px;
-  padding-top: 43px;
+  padding-top: 44px;
   padding-bottom: 58px;
 }
 
@@ -2913,9 +2886,7 @@ template {
 }
 
 .articles-item__link {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
 }
 
@@ -2926,7 +2897,8 @@ template {
 
 .support-title {
   margin-bottom: 25px;
-  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
@@ -2946,14 +2918,8 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 25px 10px 20px;
-  margin-right: 10px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  margin-right: 11px;
   border-radius: 20px;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
 
 .support-social__img {
@@ -2962,10 +2928,8 @@ template {
 
 .support-social__text {
   margin-right: 5px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  color: #FFFFFF;
+  font-family: 'Lato-Heavy', sans-serif;
+  color: #ffffff;
 }
 
 .support-social__like {
