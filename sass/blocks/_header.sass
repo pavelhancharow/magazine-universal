@@ -1,5 +1,11 @@
 .header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
   background-color: $light
+  z-index: 99
+  overflow: auto
   &-top
     &__primary
       position: relative
@@ -21,10 +27,12 @@
         width: 350px
         height: 100%
         padding-left: 30px
+        padding-right: 15px
         font-family: 'Lato-Regular', sans-serif
         color: $grey50
         border: none
         outline: none
+        text-overflow: ellipsis
         &::placeholder
           font-family: 'Lato-Regular', sans-serif
           color: $grey50
@@ -41,6 +49,11 @@
     &__logo
       margin-right: auto
       margin-left: 130px
+      width: 184px
+      height: 40px
+      &_img
+        width: 100%
+        height: 100%
     &__info
       margin-left: auto
       display: flex
@@ -55,9 +68,16 @@
     padding-top: 17px
     padding-bottom: 18px
     background-color: $grey100
+    &__fixed
+      display: none
+    &__active
+      display: block
     &__list
       display: flex
       justify-content: space-between
+    &__item
+      &_visible
+        display: none
     &__link
       font-family: 'Lato-Heavy', sans-serif
       letter-spacing: 0.5px
@@ -120,3 +140,6 @@
     justify-content: space-between
     width: 318px
     height: 100%
+    &__img
+      width: 100px
+      height: 100%

@@ -1,0 +1,250 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px
+  .header
+    &-top
+      &__secondary
+        padding-left: 19px
+      &__logo
+        margin-left: auto
+      &__info
+        max-width: 250px
+  .secondary
+    &-director
+      max-width: 303px
+  .ads
+    &-list
+      padding: 20px 0
+      &__item
+        padding: 0 19px
+      &__link
+        &_strong
+          width: 140px
+          margin-right: 6px
+          font-size: 14px
+        &_img
+          width: 55px
+          height: 55px
+@media ( max-width: 992px )
+  body
+    padding-top: 135px
+  .container
+    max-width: 700px
+  .header
+    &-top
+      &__search
+        &_input
+          width: 250px
+      &__secondary
+        padding-left: 0px
+      &__info
+        max-width: 156px
+        flex-direction: column
+        align-items: flex-end
+        width: 250px
+      &__date
+        order: 1
+    &-bottom
+      display: none
+      position: fixed
+      top: 135px
+      left: 0
+      width: 280px
+      bottom: 0
+      padding-top: 30px
+      padding-bottom: 30px
+      overflow: auto
+      &__active
+        display: block
+      &__list
+        flex-direction: column
+      &__item
+        padding: 0 35px
+        &:not(:last-of-type)
+          padding-bottom: 20px
+      &__link
+        font-size: 18px
+  .secondary
+    &-director
+      width: 237px
+@media ( max-width: 767px )
+  body
+    padding-top: 124px
+  .container
+    max-width: 576px
+  .header
+    &-top
+      &__search
+        margin-left: 15px
+        &_input
+          width: 195px
+      &__secondary
+        height: 73px
+      &__info
+        max-width: 133px
+        font-size: 12px
+      &__subscribe
+        right: 87px
+      &__logo
+        width: 166px
+        height: 35px
+    &-bottom
+      width: 230px
+      top: 124px
+      left: 0
+  .secondary
+    &-director
+      max-width: 212px
+      &__img
+        width: 97px
+        height: 100%
+    &-description
+      font-size: 12px
+  .button
+    &-menu
+      width: 105px
+  .ads
+    &-list
+      &__item
+        padding-left: 27px
+        padding-right: 28px
+      &__link
+        &_strong
+          width: 154px
+          margin-right: 15px
+          font-size: 16px
+        &_img
+          width: 65px
+          height: 65px
+@media ( max-width: 586px )
+  body
+    padding-top: 116px
+  .container
+    max-width: 97%
+  .header
+    &-top
+      &__search
+        display: none
+        &_input
+          width: 200px
+        &_active
+          display: block
+      &__subscribe
+        display: none
+      &__info
+        display: none
+        &_active
+          display: flex
+      &__secondary
+        height: 65px
+      &__logo
+        &_active
+          margin: 0
+          width: 146px
+    &-bottom
+      width: 100%
+      top: 116px
+      left: 0
+      right: 0
+  .button
+    &-menu
+      border-right: none
+  .secondary
+    &-description
+      display: none
+    &-director
+      display: none
+      &_active
+        display: block
+        position: absolute
+        width: 80px
+        height: 65px
+        bottom: 0px
+        left: 50%
+        transform: translateX(-40px)
+  .ads
+    &-list
+      &__item
+        padding-left: 25px
+        padding-right: 25px
+      &__link
+        &_strong
+          width: 125px
+          margin-right: 5px
+          font-size: 13px
+        &_img
+          width: 55px
+          height: 55px
+@media ( max-width: 425px )
+  .container
+    max-width: 94%
+  .header
+    &-top
+      &__search
+        &_input
+          width: 100%
+          padding-left: 85px
+        &_active
+          display: none
+    &-bottom
+      &__item
+        &_visible
+          display: flex
+      &__search
+        position: relative
+        display: flex
+        align-items: center
+        width: 100%
+        height: 40px
+        border-radius: 10px
+        overflow: hidden
+  .button
+    &-search
+      width: 70px
+      height: 100%
+      top: 50%
+      transform: translateY(-50%)
+      border-right: 1px solid $grey
+  .ads
+    &-list
+      &__item
+        padding-left: 70px
+        padding-right: 30px
+        border-right: none
+      &__link
+        &_strong
+          width: 154px
+          margin-right: 15px
+          font-size: 16px
+        &_img
+          width: 65px
+          height: 65px
+@media ( max-width: 375px )
+  .secondary
+    &-director
+      &__img
+        width: 100%
+      &_active
+        width: 65px
+        height: 50px
+        bottom: 66px
+        transform: translateX(-33px)
+  .ads
+    &-list
+      &__item
+        padding-left: 37px
+        // padding-right: 50px
+@media ( max-width: 320px )
+  .container
+    max-width: 91%
+  .header
+    &-top
+      &__search
+        &_input
+          padding-left: 65px
+    &-bottom
+      &__item
+        padding: 0 15px
+  .button
+    &-search
+      width: 55px
