@@ -25,6 +25,55 @@
         &_img
           width: 55px
           height: 55px
+  .news
+    &-grid
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+  .tabs
+    &-pic
+      max-width: 735px
+    &-recomended
+      max-width: 225px
+      &__block
+        padding-top: 18px
+        padding-bottom: 18px
+        padding-left: 20px
+      &__card
+        padding-left: 20px
+        padding-right: 20px
+  .cars
+    &::after
+      width: 242px
+    &-content
+      z-index: 10
+      &__author
+        margin-right: 8px
+      &__name
+        font-size: 12px
+      &__about
+        font-size: 12px
+    &-block
+      &__top
+        padding-left: 20px
+      &__bottom
+        padding-left: 20px
+  .art
+    padding-left: 20px
+  .info
+    &-image
+      max-width: 224px
+    &-content
+      padding: 0 18px
+  .article
+    padding: 20px 16px
+  .side-bar
+    &__list
+      padding-top: 43px
+      padding-bottom: 38px
+      &_title
+        font-size: 18px
+  .bloom-bg
+    background-size: cover
 @media ( max-width: 992px )
   body
     padding-top: 135px
@@ -67,6 +116,100 @@
   .secondary
     &-director
       width: 237px
+  .tabs
+    flex-direction: column
+    max-width: 700px
+    &-pic
+      max-width: 100%
+      height: 450px
+    &-content
+      padding: 30px 30px 50px
+      background-size: cover
+    &-recomended
+      flex-direction: row
+      max-width: 100%
+      border-left: none
+      border-top: 1px solid $light
+      &__block
+        display: none
+      &__card
+        width: 100%
+        padding: 15px 10px 15px 11px
+        &:not(:last-of-type)
+          border-bottom: none
+          border-right: 1px solid $grey15
+        &_active
+          &::before
+            top: -23px
+            left: 50%
+            border-left: 10px solid transparent
+            border-bottom: 12px solid $light
+            border-right: 10px solid transparent
+            transform: translateX(-50%)
+  .card
+    &-title
+      font-size: 13px
+  .cars
+    grid-column: 1 / 9
+    padding-top: 20px
+    &::after
+      width: 241px
+      height: 264px
+    &-content
+      &__author
+        width: 40px
+        height: 40px
+        margin-right: 10px
+      &__name
+        align-self: flex-start
+        font-size: 14px
+      &__about
+        align-self: flex-start
+        max-width: 202px
+        font-size: 14px
+  .art
+    grid-column: 5 / 9
+    grid-row: 3 / 4
+    &-content
+      &__comments
+        width: 123px
+  .info
+    &-block
+      grid-column: 1 / 5
+      grid-row: 3 / 4
+      padding-bottom: 27px
+    &-image
+      max-width: 220px
+      height: 269px
+    &-content
+      padding: 0 14px
+  .article
+    padding: 15px 15px
+    height: 170px
+    &-first
+      grid-column: 1 / 4
+      grid-row: 4 / 5
+    &-second
+      grid-column: 4 / 7
+      grid-row: 4 / 5
+    &-third
+      grid-column: 7 / 10
+      grid-row: 4 / 5
+    &-fours
+      grid-column: 10 / 13
+      grid-row: 4 / 5
+    &__title
+      font-size: 14px
+      line-height: 18px
+    &__content
+      font-size: 12px
+      line-height: 18px
+    &__date
+      font-size: 11px
+      line-height: 13px
+  .side-bar
+    grid-column: 9 / 13
+    grid-row: 2 / 4
 @media ( max-width: 767px )
   body
     padding-top: 124px
@@ -104,6 +247,7 @@
     &-menu
       width: 105px
   .ads
+    padding-bottom: 215px
     &-list
       &__item
         padding-left: 27px
@@ -116,7 +260,122 @@
         &_img
           width: 65px
           height: 65px
-@media ( max-width: 586px )
+  .news
+    &-grid
+      transform: translateY(-185px)
+  .tabs
+    height: 475px
+    &-pic
+      height: 355px
+    &-content
+      padding: 20px 30px 30px
+      &__about
+        &_title
+          margin-bottom: 30px
+          max-width: 491px
+          font-size: 30px
+          line-height: 40px
+    &-recomended
+      &__regular
+        display: none
+      &__swiper
+        display: flex
+      &__card
+        padding-bottom: 10px
+        border-right: 1px solid $grey15
+  .cars
+    grid-column: 1 / 9
+    &::after
+      width: 216px
+      height: 265px
+    &-content
+      &__title
+        margin-bottom: 20px
+      &__content
+        max-width: 182px
+        margin-bottom: 15px
+      &__author
+        width: 30px
+        height: 30px
+        align-self: flex-start
+      &__name
+        font-size: 12px
+        margin-right: 5px
+      &__about
+        max-width: 169px
+        margin-right: 5px
+        font-size: 12px
+  .art
+    grid-column: 9 / 13
+    grid-row: 2 / 3
+    padding-left: 10px
+    &::before
+      top: 10px
+      left: 10px
+      width: 56px
+      height: 21px
+    &-content
+      &__title
+        margin-bottom: 30px
+        font-size: 14px
+        line-height: 22px
+      &__author
+        width: 35px
+        height: 35px
+        margin-right: 5px
+      &__comments
+        width: 115px
+  .info
+    &-block
+      grid-column: 1 / 5
+      grid-row: 3 / 5
+    &-image
+      max-width: 178px
+      height: 259px
+    &-content
+      font-size: 15px
+      line-height: 20px
+  .article
+    height: 170px
+    &-first
+      grid-column: 5 / 9
+      grid-row: 3 / 4
+    &-second
+      grid-column: 9 / 13
+      grid-row: 3 / 4
+    &-third
+      grid-column: 5 / 9
+      grid-row: 4 / 5
+    &-fours
+      grid-column: 9 / 13
+      grid-row: 4 / 5
+  .side-bar
+    display: flex
+    grid-column: 1 / 13
+    grid-row: 5 / 6
+    &__top
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 15px 0 15px
+    &__item
+      display: flex
+      padding: 20px 0
+    &__list
+      padding: 0 12px
+      &:not(:last-child)
+        border-bottom: none
+        border-right: 1px solid $greyblue
+      &::before
+        top: -9px
+        left: 10px
+  .bloom-bg
+    height: 200px
+    &__title
+      max-width: 578px
+      font-size: 30px
+      line-height: 40px
+@media ( max-width: 576px )
   body
     padding-top: 116px
   .container
@@ -175,6 +434,113 @@
         &_img
           width: 55px
           height: 55px
+  .button
+    &-read
+      width: 120px
+      height: 40px
+      padding-left: 15px
+      padding-right: 15px
+  .news
+    &-grid
+      grid-column-gap: 25px
+  .tabs
+    &-content
+      padding-left: 15px
+      padding-right: 15px
+      &__about
+        &_title
+          font-size: 25px
+          line-height: 35px
+        &_play
+          margin-left: auto
+        &_circle
+          margin-right: 5px
+        &_track
+          font-size: 12px
+  .cars
+    grid-column: 1 / 13
+    &::after
+      width: 245px
+    &-content
+      &__author
+        width: 40px
+        height: 40px
+      &__name
+        font-size: 12px
+        min-width: 77px
+      &__about
+        max-width: 185px
+        margin-right: auto
+        font-size: 12px
+  .art
+    grid-column: 1 / 8
+    grid-row: 3 / 5
+    padding-left: 20px
+    padding-right: 20px
+    &::before
+      top: 18px
+      left: 18px
+      width: 66px
+      height: 25px
+    &-block
+      max-width: 267px
+    &-content
+      &__title
+        margin-bottom: 40px
+        font-size: 16px
+        line-height: 24px
+      &__author
+        width: 45px
+        height: 45px
+        margin-right: 10px
+      &__comments
+        width: 136px
+  .info
+    &-block
+      grid-column: 1 / 8
+      grid-row: 5 / 7
+    &-image
+      max-width: 315px
+    &-content
+      font-size: 16px
+      line-height: 24px
+  .article
+    &__title
+      font-size: 16px
+      line-height: 17px
+    &__content
+      font-size: 13px
+    &-first
+      grid-column: 8 / 13
+      grid-row: 3 / 4
+    &-second
+      grid-column: 8 / 13
+      grid-row: 4 / 5
+    &-third
+      grid-column: 8 / 13
+      grid-row: 5 / 6
+    &-fours
+      grid-column: 8 / 13
+      grid-row: 6 / 7
+  .side-bar
+    grid-row: 7 / 8
+@media ( max-width: 551px )
+  .side-bar
+    &__list
+      flex: 1 1 0
+      &_title
+        font-size: 16px
+    &__group
+      flex-direction: column
+      margin-top: auto
+    &__image
+      margin-right: 0
+      margin-bottom: 5px
+  .bloom-bg
+    &__title
+      max-width: 422px
+      font-size: 25px
+      line-height: 30px
 @media ( max-width: 425px )
   .container
     max-width: 94%
@@ -219,6 +585,66 @@
         &_img
           width: 65px
           height: 65px
+  .news
+    &-grid
+      grid-column-gap: 15px
+  .tabs
+    &-content
+      padding-right: 40px
+      &__about
+        &_track
+          display: none
+  .cars
+    &::after
+      width: 182px
+  .art
+    padding-left: 15px
+    padding-right: 15px
+    &-content
+      &__comments
+        width: 112px
+  .article
+    padding: 12px 12px
+  .side-bar
+    &__item
+      align-items: center
+      padding-top: 15px
+      padding-bottom: 15px
+      &_active
+        flex-direction: column
+        padding-top: 0
+        padding-bottom: 0
+        padding-left: 40px
+        padding-right: 40px
+    &__list
+      padding-left: 40px
+      padding-right: 40px
+      &::before
+        left: 10%
+      &_hidden
+        display: none
+      &_active
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 0
+        padding-right: 0
+        &::before
+          top: 7px
+          left: 0
+        &:not(:last-of-type)
+          border-right: none
+          border-bottom: 1px solid $grey15
+      &_title
+        text-align: center
+        font-size: 18px
+        line-height: 24px
+    &__bio
+      align-items: center
+    &__name
+      font-size: 14px
+  .bloom-bg
+    &__title
+      max-width: 280px
 @media ( max-width: 375px )
   .secondary
     &-director
@@ -233,7 +659,65 @@
     &-list
       &__item
         padding-left: 37px
-        // padding-right: 50px
+  .news
+    &-grid
+      grid-column-gap: 10px
+  .tabs
+    &-content
+      &__about
+        &_title
+          font-size: 20px
+          line-height: 30px
+  .cars
+    &::after
+      width: 128px
+    &-content
+      &__author
+        width: 45px
+        height: 45px
+      &__name
+        align-self: center
+        margin-right: auto
+        font-size: 14px
+        &_span
+          display: none
+      &__about
+        display: none
+  .art
+    grid-column: 1 / 13
+    grid-row: 3 / 4
+    height: 360px
+    &-content
+      &__title
+        font-size: 18px
+      &__comments
+        width: 136px
+  .info
+    &-block
+      grid-column: 1 / 13
+      grid-row: 5 / 6
+      padding-bottom: 10px
+    &-image
+      max-width: 375px
+    &-content
+      margin-top: 10px
+  .article
+    &__title
+      margin-bottom: 10px
+    &-first
+      grid-column: 1 / 7
+      grid-row: 4 / 5
+    &-second
+      grid-column: 7 / 13
+      grid-row: 4 / 5
+    &-third
+      grid-column: 1 / 7
+      grid-row: 6 / 7
+    &-fours
+      grid-column: 7 / 13
+      grid-row: 6 / 7
+  .side-bar
+    grid-row: 7 / 8
 @media ( max-width: 320px )
   .container
     max-width: 91%
@@ -242,6 +726,8 @@
       &__search
         &_input
           padding-left: 65px
+      &__date
+        font-size: 11px
     &-bottom
       &__item
         padding: 0 15px

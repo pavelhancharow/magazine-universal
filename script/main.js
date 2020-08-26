@@ -4,6 +4,8 @@ $(document).ready(function () {
   var commentsButton = $('.comments-button');
   var hiddenComments = $('.comments-item__list_hidden');
   var loadMore = $('.comments-button__img');
+  var sideBarButton = $('.side-bar__button');
+  var hiddenSideBar = $('.side-bar__list_hidden')
 
   tab.on('click', function () {
     tab.removeClass('tabs-recomended__card_active');
@@ -21,6 +23,13 @@ $(document).ready(function () {
     commentsButton.removeClass('tabs-recomended__list_hidden');
     $(loadMore).toggleClass('comments-button__img_rotate');
     $(hiddenComments).toggleClass('comments-item__list_hidden');
+  });
+
+  sideBarButton.on('click', function () {
+    // $('.side-bar__list').removeClass('side-bar__list_hidden');
+    $(hiddenSideBar).toggleClass('side-bar__list_hidden');
+    $('.side-bar__item').toggleClass('side-bar__item_active');
+    $('.side-bar__list').toggleClass('side-bar__list_active');
   });
 
   //header menu
@@ -71,6 +80,28 @@ $(document).ready(function () {
       },
       320: {
         slidesPerView: 1,
+        spaceBetween: 0
+      }
+    }
+  });
+
+  var tabsSwiper = new Swiper('.tabs-recomended__swiper', {
+    // Optional parameters
+    loop: false,
+    speed: 400,
+    slidesPerView: 4,
+    spaceBetween: 0,
+    breakpoints: {
+      577: {
+        slidesPerView: 4,
+        spaceBetween: 0
+      },
+      426: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      },
+      320: {
+        slidesPerView: 2,
         spaceBetween: 0
       }
     }

@@ -39,13 +39,13 @@
     &__food
       background-image: url(../img/bg/england-bg.png)
     &__cars
-      background: url(../img/bg/mustang-bg.jpg)
+      background-image: url(../img/bg/mustang-bg.jpg)
     &__movies
-      background: url(../img/bg/rojo-bg.jpg)
+      background-image: url(../img/bg/rojo-bg.jpg)
     &__nfl
-      background: url(../img/bg/nfl-bg.jpg)
+      background-image: url(../img/bg/nfl-bg.jpg)
     &__tech
-      background: url(../img/bg/tech-bg.jpg)
+      background-image: url(../img/bg/tech-bg.jpg)
     &__author
       display: flex
       align-items: center
@@ -66,7 +66,7 @@
         line-height: 15px
         letter-spacing: 0.5px
         text-transform: uppercase
-        color: #4592FF
+        color: $blue
       &_title
         margin-bottom: 40px
         max-width: 645px
@@ -78,6 +78,7 @@
       &_buttoms
         display: flex
         align-items: center
+        height: 50px
       &_play
         display: flex
         margin-left: 30px
@@ -99,27 +100,26 @@
     flex-direction: column
     height: 100%
     max-width: 263px
-    flex-grow: 1
     border-left: 1px solid $light
+    &__swiper
+      display: none
     &__block
       display: flex
       align-items: center
       padding: 20px 0 19px 25px
       background-color: $light
-      border-bottom: 1px solid #D9DADB
+      border-bottom: 1px solid $grey15
     &__card
       display: flex
       flex-direction: column
-      justify-content: center
+      height: 100%
       padding: 18px 25px 18px 25px
       background-color: $light
       &:not(:last-of-type)
-        border-bottom: 1px solid #D9DADB
-      &:last-of-type
-        padding-bottom: 29px
+        border-bottom: 1px solid $grey15
       &_active
         position: relative
-        background-color: #F5F5F5
+        background-color: $grey05
         &::before
           content: ""
           position: absolute
@@ -194,6 +194,7 @@
       display: flex
       align-items: center
       padding-left: 35px
+      padding-right: 20px
   &-content
     display: flex
     flex-direction: column
@@ -238,10 +239,15 @@
 .art
   position: relative
   grid-column: 7 / 10
+  grid-row: 2 / 3
   display: flex
+  width: 100%
   padding-left: 25px
   padding-bottom: 25px
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/hand-bg.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
   &::before
     content: "Popular"
     position: absolute
@@ -304,8 +310,9 @@
     padding-bottom: 29px
     background-color: $light
   &-image
-    width: 263px
+    max-width: 263px
     height: 275px
+    object-fit: cover
   &-content
     margin-top: auto
     padding: 0 25px
@@ -388,7 +395,7 @@
     &__bio
       display: flex
       flex-direction: column
-      color: #D1E2EB
+      color: $greyblue25
     &__name
       color: $greyblue25
     &__prof
@@ -412,7 +419,7 @@
   height: 270px
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/flower-bg.png)
   background-position: center
-  background-size: 100%
+  background-size: 102%
   background-repeat: no-repeat
   transform: translateY(-265px)
   &__title
