@@ -74,6 +74,31 @@
         font-size: 18px
   .bloom-bg
     background-size: cover
+  .newsfeed
+    &-cards
+      padding: 0 21px
+    &-card
+      &__group
+        margin-top: 3px
+        margin-bottom: 12px
+      &__img
+        width: 280px
+        height: 195px
+        margin-right: 20px
+      &__title
+        font-size: 18px
+      &__about
+        margin-bottom: 0
+      &__feedback
+        margin-bottom: 0
+        margin-top: auto
+    &-column
+      &__header
+        padding-left: 14px
+      &__main
+        padding: 0 8px
+        &_img
+          margin-right: 8px
 @media ( max-width: 992px )
   body
     padding-top: 135px
@@ -210,6 +235,40 @@
   .side-bar
     grid-column: 9 / 13
     grid-row: 2 / 4
+  .newsfeed
+    padding-top: 40px
+    padding-bottom: 40px
+    &-cards
+      width: 100%
+      grid-column: 1 / 13
+      grid-row: 1 / 2
+    &-card
+      &__title
+        font-size: 16px
+    &-column
+      grid-column: 1 / 13
+      grid-row: 2 / 3
+      &__header
+        padding-left: 0
+        text-align: center
+      &__main
+        display: flex
+        flex-wrap: wrap
+        padding: 10px 0
+        &_card
+          max-width: 230px
+          padding: 10px 20px
+          &:not(:last-child)
+            border-bottom: none
+        &_hidden
+          display: none
+        &_title
+          margin-bottom: 0
+          line-height: 16px
+        &_time
+          margin-top: auto
+  .visible
+    display: none
 @media ( max-width: 767px )
   body
     padding-top: 124px
@@ -375,6 +434,15 @@
       max-width: 578px
       font-size: 30px
       line-height: 40px
+  .newsfeed
+    &-card
+      &__img
+        max-width: 193px
+    &-column
+      &__main
+        &_card
+          max-width: 192px
+          padding: 10px 10px
 @media ( max-width: 576px )
   body
     padding-top: 116px
@@ -524,6 +592,29 @@
       grid-row: 6 / 7
   .side-bar
     grid-row: 7 / 8
+  .newsfeed
+    padding-top: 30px
+    padding-bottom: 30px
+    &-card
+      display: flex
+      flex-direction: column
+      &__img
+        align-self: center
+        max-width: 295px
+        margin-right: 0
+        margin-bottom: 20px
+      &__content
+        width: 100%
+      &__about
+        margin-bottom: 20px
+    &-column
+      &__main
+        justify-content: space-around
+        &_card
+          max-width: 230px
+          padding: 10px 10px
+        &_visible
+          display: none
 @media ( max-width: 551px )
   .side-bar
     &__list
@@ -541,6 +632,12 @@
       max-width: 422px
       font-size: 25px
       line-height: 30px
+@media ( max-width: 475px )
+  .newsfeed
+    &-column
+      &__main
+        &_card
+          max-width: 202px
 @media ( max-width: 425px )
   .container
     max-width: 94%
@@ -645,6 +742,18 @@
   .bloom-bg
     &__title
       max-width: 280px
+  .newsfeed
+    &-wrapper
+      grid-column-gap: 10px
+      grid-row-gap: 20px
+    &-card
+      &__img
+    &-column
+      &__header
+        padding: 15px 0
+      &__main
+        &_card
+          max-width: 197px
 @media ( max-width: 375px )
   .secondary
     &-director
@@ -718,6 +827,16 @@
       grid-row: 6 / 7
   .side-bar
     grid-row: 7 / 8
+  .newsfeed
+    &-card
+      &__img
+        max-width: 247px
+    &-column
+      &__main
+        &_card
+          max-width: 230px
+        &_title
+          line-height: 16px
 @media ( max-width: 320px )
   .container
     max-width: 91%

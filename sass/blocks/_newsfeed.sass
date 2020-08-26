@@ -5,7 +5,6 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: repeat()
     grid-column-gap: 30px
     grid-row-gap: 30px
   &-cards
@@ -25,6 +24,7 @@
       width: 336px
       height: 195px
       margin-right: 25px
+      object-fit: cover
     &__content
       position: relative
       display: flex
@@ -93,6 +93,8 @@
   &-column
     grid-column: 10 / 13
     grid-row: 1 / 4
+    display: flex
+    flex-direction: column
     border-radius: 10px
     overflow: hidden
     background-color: $light
