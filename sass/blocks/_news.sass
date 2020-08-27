@@ -322,6 +322,25 @@
     line-height: 25px
     color: $grey100
 .article
+  display: flex
+  flex-direction: column
+  padding: 25px 25px 30px 25px
+  background-color: $light
+  &__title
+    margin-bottom: 5px
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
+    font-size: 16px
+    line-height: 25px
+    color: $grey100
+  &__content
+    max-width: 213px
+    margin-bottom: 8px
+  &__date
+    margin-top: auto
+    font-size: 12px
+    line-height: 15px
+    color: $grey50
   &-first
     grid-row: 3 / 4
     grid-column: 4 / 7

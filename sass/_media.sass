@@ -99,6 +99,21 @@
         padding: 0 8px
         &_img
           margin-right: 8px
+  .information
+    &-block
+      &__slider
+        height: 560px
+      &__slide
+        padding-left: 25px
+        padding-right: 25px
+        padding-bottom: 80px
+        &_title
+          margin-bottom: 0
+      &__link
+        margin-top: auto
+  .article
+    &-information
+      padding: 20px 16px
 @media ( max-width: 992px )
   body
     padding-top: 135px
@@ -267,8 +282,26 @@
           line-height: 16px
         &_time
           margin-top: auto
-  .visible
-    display: none
+  .information
+    padding-top: 40px
+    padding-bottom: 40px
+    &-wrapper
+      grid-column-gap: 10px
+      grid-row-gap: 20px
+    &-block
+      &__slider
+        grid-column: 1 / 13
+        grid-row: 1 / 2
+      &__career
+        grid-column: 1 / 9
+        grid-row: 2 / 4
+    &-card
+      &__first
+        grid-column: 9 / 13
+        grid-row: 2 / 3
+      &__second
+        grid-column: 9 / 13
+        grid-row: 3 / 4
 @media ( max-width: 767px )
   body
     padding-top: 124px
@@ -443,6 +476,34 @@
         &_card
           max-width: 192px
           padding: 10px 10px
+  .information
+    &-block
+      &__slider
+        height: 430px
+      &__slide
+        &_title
+          font-size: 30px
+          line-height: 40px
+      &__career
+        padding: 25px 20px
+        &_title
+          max-width: 200px
+          font-size: 22px
+  .article
+    &-information
+      &__title
+        font-size: 14px
+        line-height: 18px
+      &__content
+        font-size: 12px
+        line-height: 18px
+      &__date
+        font-size: 11px
+        line-height: 13px
+  .swiper
+    &-pagination
+      &-bullets
+        bottom: 25px !important
 @media ( max-width: 576px )
   body
     padding-top: 116px
@@ -615,6 +676,21 @@
           padding: 10px 10px
         &_visible
           display: none
+  .information
+    padding-top: 30px
+    padding-bottom: 30px
+    &-block
+      &__slider
+      &__career
+        grid-column: 1 / 13
+        grid-row: 2 / 3
+    &-card
+      &__first
+        grid-column: 1 / 7
+        grid-row: 3 / 4
+      &__second
+        grid-column: 7 / 13
+        grid-row: 3 / 4
 @media ( max-width: 551px )
   .side-bar
     &__list
@@ -754,6 +830,22 @@
       &__main
         &_card
           max-width: 197px
+  .information
+    &-block
+      &__slider
+        height: 370px
+      &__slide
+        padding-top: 25px
+        padding-bottom: 50px
+        &_job
+          margin-bottom: 23px
+        &_title
+          font-size: 25px
+          line-height: 30px
+  .swiper
+    &-pagination
+      &-bullets
+        bottom: 20px !important
 @media ( max-width: 375px )
   .secondary
     &-director
@@ -837,6 +929,15 @@
           max-width: 230px
         &_title
           line-height: 16px
+  .information
+    &-block
+      &__slide
+        padding-left: 15px
+        padding-right: 15px
+      &__career
+        padding: 15px 15px
+        &_text
+          max-width: 185px
 @media ( max-width: 320px )
   .container
     max-width: 91%
