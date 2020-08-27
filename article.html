@@ -21,10 +21,10 @@
             <img src="img/svg/hamburger-menu.svg" alt="icon: button-menu">
             <span class="header-top__description">Sections</span>
           </button>
-          <div class="header-top__search">
+          <form action="#" class="header-top__search">
             <button class="button button-search"><img src="img/svg/search.svg" alt="icon: search"></button>
             <input type="search" class="header-top__search_input" placeholder="Search">
-          </div>
+          </form>
           <!-- /.header-top__search -->
           <a href="#" class="user">
             <img src="img/svg/user.svg" alt="icon: user">
@@ -47,11 +47,12 @@
         <!-- /.line-horizontal -->
         <div class="header-top__secondary">
           <div class="secondary-director">
-            <img src="img/freedom.png" alt="icon: freedom">
+            <img src="img/freedom.png" alt="icon: freedom" class="secondary-director__img">
             <span class="secondary-description">Boston and New York Bear Brunt</span>
           </div>
           <!-- /.secondary-director -->
-          <a href="index.html" class="header-top__logo"><img src="img/svg/logo.svg" alt="icon: Universal-logo"></a>
+          <a href="index.html" class="header-top__logo"><img src="img/svg/logo.svg" alt="icon: Universal-logo"
+              class="header-top__logo_img"></a>
           <!-- /.header-top__logo -->
           <div class="header-top__info">
             <span class="header-top__date">Monday, January 1, 2018</span>
@@ -66,6 +67,12 @@
     <div class="header-bottom">
       <div class="container">
         <ul class="header-bottom__list">
+          <li class="header-bottom__item header-bottom__item_visible">
+            <form action="#" class="header-bottom__search">
+              <button class="button button-search"><img src="img/svg/search.svg" alt="icon: search"></button>
+              <input type="search" class="header-top__search_input" placeholder="Search">
+            </form>
+          </li>
           <li class="header-bottom__item"><a href="#" class="header-bottom__link">News</a></li>
           <li class="header-bottom__item"><a href="#" class="header-bottom__link">Opinion</a></li>
           <li class="header-bottom__item"><a href="#" class="header-bottom__link">Science</a></li>
@@ -629,14 +636,14 @@
         <div class="footer-subscribe">
           <h2 class="footer-subscribe__title">Subscribe now and get 20% off</h2>
           <form action="send.php" method="POST" class="footer-subscribe__form form">
-            <div class="input-group">
+            <div class="input-group input-group__footer">
               <input type="email" name="email" placeholder="Enter your email" class="footer-subscribe__input" required>
             </div>
             <button class="footer-subscribe__button button" value="Subsribe" name="subscribe">Subscribe</button>
           </form>
         </div>
         <!-- /.footer-subscribe -->
-        <img src="img/svg/footer-line.svg" alt="line" class="footer-line">
+        <div class="footer-image"><img src="img/svg/footer-line.svg" alt="line" class="footer-line"></div>
         <!-- /.footer-line -->
         <div class="footer-menu">
           <div class="footer-menu__news footer-menu__group">
@@ -705,8 +712,8 @@
         <!-- /.footer-menu -->
         <div class="footer-social">
           <div class="footer-social__block">
-            <a href="index.html" class="footer-social__logo"><img src="img/svg/footer-logo.svg"
-                alt="icon: logo-footer"></a>
+            <a href="index.html" class="footer-social__logo"><img src="img/svg/footer-logo.svg" alt="icon: logo-footer"
+                class="footer-social__logo_img"></a>
             <ul class="block-item">
               <li class="block-item__list"><a href="#" class="block-item__link">Contact Us</a></li>
               <li class="block-item__list"><a href="#" class="block-item__link">Work with Us</a></li>
@@ -741,7 +748,6 @@
     </div>
     <!-- /.container -->
   </footer>
-  <!-- /.footer -->
   <script src="script/jquery-3.5.1.slim.min.js"></script>
   <script src="script/jquery.fancybox.min.js"></script>
   <script src="script/swiper-bundle.min.js"></script>
