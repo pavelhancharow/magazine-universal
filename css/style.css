@@ -3003,7 +3003,7 @@ template {
   color: #939699;
 }
 
-.articles-item {
+.reference-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3015,13 +3015,13 @@ template {
   padding-bottom: 58px;
 }
 
-.articles-item__list {
+.reference-item__list {
   padding: 5px 14px;
   border: 1px solid #D9DADB;
   border-radius: 5px;
 }
 
-.articles-item__link {
+.reference-item__link {
   font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
 }
@@ -3111,9 +3111,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3625,7 +3622,7 @@ template {
   .memorial {
     max-width: 233px;
   }
-  .articles-item {
+  .reference-item {
     padding: 40px 0;
   }
   .support {
@@ -5501,14 +5498,14 @@ template {
     margin-bottom: 0;
     margin-right: 10px;
   }
-  .articles-item {
+  .reference-item {
     padding: 20px 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .articles-item__list {
+  .reference-item__list {
     margin: 10px 0;
   }
   .support-title {
@@ -5757,7 +5754,7 @@ template {
   .paragraph-button__next {
     right: 14px;
   }
-  .articles-item {
+  .reference-item {
     width: 280px;
     margin: 0 auto;
   }
