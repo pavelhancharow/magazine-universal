@@ -2708,7 +2708,17 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 140px;
-  margin-bottom: 29px;
+  margin-bottom: 34px;
+}
+
+.paragraph-lead__link {
+  width: 40px;
+  height: 40px;
+}
+
+.paragraph-lead__link_img {
+  width: 100%;
+  height: 100%;
 }
 
 .paragraph-lead__line {
@@ -2763,6 +2773,13 @@ template {
 .paragraph-photos__swiper {
   width: 100%;
   height: 555px;
+}
+
+.paragraph-photos__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .paragraph-photos__about {
@@ -2880,6 +2897,8 @@ template {
   width: 100%;
   height: 180px;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .memorial-title {
@@ -2944,7 +2963,7 @@ template {
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
-  z-index: 99;
+  z-index: 10;
 }
 
 .quote-author {
@@ -2958,7 +2977,17 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-right: 29px;
+  margin-right: 30px;
+}
+
+.quote-author__bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .quote-author__img {
@@ -3571,6 +3600,40 @@ template {
     font-size: 45px;
     line-height: 55px;
   }
+  .paragraph {
+    padding-top: 50px;
+  }
+  .paragraph-text {
+    max-width: 660px;
+  }
+  .paragraph-lead__first {
+    margin-bottom: 30px;
+  }
+  .paragraph-lead__about {
+    top: -130px;
+    width: 233px;
+  }
+  .paragraph-geography {
+    padding-bottom: 45px;
+  }
+  .paragraph-geography__part2 {
+    padding-bottom: 55px;
+  }
+  .paragraph-geography__part3_line {
+    width: 660px;
+  }
+  .memorial {
+    max-width: 233px;
+  }
+  .articles-item {
+    padding: 40px 0;
+  }
+  .support {
+    padding-bottom: 50px;
+  }
+  br {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3971,13 +4034,83 @@ template {
     max-width: 450px;
     margin-bottom: 35px;
   }
+  .paragraph {
+    padding-top: 40px;
+  }
+  .paragraph-lead__about {
+    padding-top: 25px;
+    width: 193px;
+    top: -100px;
+  }
+  .paragraph-lead__img {
+    width: 50px;
+    height: 50px;
+  }
+  .paragraph-lead__author {
+    font-size: 18px;
+  }
+  .paragraph-lead__articles {
+    margin-bottom: 20px;
+  }
+  .paragraph-lead__social {
+    width: 110px;
+    margin-bottom: 20px;
+  }
+  .paragraph-lead__link {
+    width: 30px;
+    height: 30px;
+  }
+  .paragraph-text {
+    max-width: 468px;
+  }
+  .paragraph-photos__swiper {
+    height: 425px;
+  }
+  .paragraph-photos__author {
+    padding-right: 30px;
+  }
+  .paragraph-button {
+    width: 50px;
+    height: 50px;
+  }
+  .paragraph-button__prev {
+    left: 20px;
+  }
+  .paragraph-button__next {
+    right: 20px;
+  }
+  .paragraph-geography {
+    padding-bottom: 35px;
+  }
+  .paragraph-geography__part2 {
+    padding-bottom: 35px;
+  }
+  .paragraph-geography__part3_line {
+    width: 468px;
+  }
+  .memorial {
+    max-width: 193px;
+  }
+  .memorial-img {
+    height: 160px;
+  }
+  .quote {
+    margin-bottom: 35px;
+  }
+  .quote-author {
+    margin-right: 0;
+  }
+  .support {
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 767px) {
   body {
     padding-top: 124px;
   }
-  .container {
+  .container,
+  .container2 {
     max-width: 576px;
   }
   .header-top__search {
@@ -4397,9 +4530,6 @@ template {
   .block-item__list:not(:last-child) {
     margin-right: 0;
   }
-  .container2 {
-    max-width: 576px;
-  }
   .hero {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -4420,6 +4550,81 @@ template {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 25px;
+  }
+  .paragraph {
+    padding-top: 30px;
+  }
+  .paragraph-text {
+    max-width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .paragraph-text__part2 {
+    max-width: 363px;
+  }
+  .paragraph-lead__first {
+    max-width: 363px;
+  }
+  .paragraph-lead__first::first-letter {
+    margin-top: 10px;
+    margin-left: -3px;
+  }
+  .paragraph-lead__about {
+    padding: 15px 0;
+    width: 190px;
+    top: auto;
+    right: 0;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .paragraph-photos__swiper {
+    height: 355px;
+  }
+  .paragraph-photos__about {
+    padding-left: 15px;
+  }
+  .paragraph-photos__author {
+    padding: 0 10px;
+  }
+  .paragraph-geography {
+    padding-bottom: 30px;
+  }
+  .paragraph-geography__part2 {
+    padding-top: 30px;
+  }
+  .paragraph-geography__part3_line {
+    width: 100%;
+  }
+  .memorial {
+    top: 1%;
+    bottom: auto;
+    max-width: 183px;
+  }
+  .memorial-group {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .memorial-about {
+    text-align: justify;
+  }
+  .quote-title {
+    max-width: 70%;
+    text-align: justify;
+    font-size: 22px;
+  }
+  .quote-author__img {
+    width: 50px;
+    height: 50px;
+  }
+  .support {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 618px) {
+  .quote::before {
+    left: 0;
   }
 }
 
@@ -4701,7 +4906,7 @@ template {
     grid-row: 3 / 4;
   }
   .footer-wrapper {
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
   }
   .footer-subscribe {
     margin-bottom: 0;
@@ -4822,6 +5027,12 @@ template {
   .hero-header__nav_next {
     font-size: 13px;
   }
+  .paragraph-lead__first {
+    max-width: 60%;
+  }
+  .paragraph-text__part2 {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 551px) {
@@ -4848,6 +5059,68 @@ template {
     max-width: 422px;
     font-size: 25px;
     line-height: 30px;
+  }
+  .paragraph-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .paragraph-text__part2 {
+    max-width: 53%;
+  }
+  .paragraph-lead__first {
+    max-width: 53%;
+  }
+  .paragraph-lead__first::first-letter {
+    margin-top: 5px;
+    margin-left: -7px;
+    margin-right: 7px;
+    font-size: 90px;
+    line-height: 70px;
+  }
+  .paragraph-lead__about {
+    width: 175px;
+    bottom: auto;
+    top: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .paragraph-geography__title {
+    font-size: 22px;
+  }
+  .paragraph-photos__swiper {
+    height: 300px;
+  }
+  .paragraph-photos__about_span {
+    font-size: 13px;
+  }
+  .paragraph-photos__author_name {
+    font-size: 13px;
+  }
+  .paragraph-button {
+    width: 40px;
+    height: 40px;
+  }
+  .memorial {
+    max-width: 175px;
+  }
+  .quote-title {
+    max-width: 61%;
+    font-size: 16px;
+  }
+  .quote-author__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .support-social {
+    position: relative;
+  }
+  .support-social__button {
+    padding: 10px 15px;
+  }
+  .support-social__more {
+    position: absolute;
+    top: -56px;
+    right: 0;
   }
 }
 
@@ -5059,6 +5332,9 @@ template {
   .footer {
     padding: 20px 0;
   }
+  .footer-wrapper {
+    grid-row-gap: 20px;
+  }
   .footer-subscribe__title {
     font-size: 23px;
   }
@@ -5142,6 +5418,118 @@ template {
   }
   .hero-about__share {
     margin-left: auto;
+  }
+  .paragraph {
+    padding-top: 20px;
+  }
+  .paragraph-text:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  .paragraph-text__part2 {
+    max-width: 100%;
+  }
+  .paragraph-lead__first {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .paragraph-lead__about {
+    position: relative;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .paragraph-geography {
+    padding-bottom: 20px;
+  }
+  .paragraph-geography__title {
+    margin-bottom: 20px;
+  }
+  .paragraph-geography__part2 {
+    padding-top: 20px;
+  }
+  .paragraph-photos__swiper {
+    height: 250px;
+  }
+  .paragraph-photos__author_img {
+    margin-right: 0;
+  }
+  .paragraph-photos__author_about {
+    display: none;
+  }
+  .memorial {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .memorial-group {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 22px;
+  }
+  .memorial-title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 15px;
+  }
+  .quote {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quote-title {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .quote-author {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quote-author__img {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .articles-item {
+    padding: 20px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .articles-item__list {
+    margin: 10px 0;
+  }
+  .support-title {
+    font-size: 22px;
+  }
+  .support-social {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .support-social__button {
+    padding: 8px 10px;
+    margin-right: 0;
+  }
+  .support-social__text {
+    margin-right: 4px;
+    font-size: 13px;
+  }
+  .support-social__more {
+    width: 36px;
+    height: 36px;
   }
 }
 
@@ -5362,6 +5750,25 @@ template {
   }
 }
 
+@media (max-width: 350px) {
+  .paragraph-button__prev {
+    left: 14px;
+  }
+  .paragraph-button__next {
+    right: 14px;
+  }
+  .articles-item {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .support-social__button {
+    padding: 8px 5px;
+  }
+  .support-social__img {
+    margin-right: 5px;
+  }
+}
+
 @media (max-width: 334px) {
   .footer-social__logo {
     margin-right: 15px;
@@ -5393,6 +5800,9 @@ template {
   }
   .block-item__link {
     font-size: 12px;
+  }
+  .paragraph-photos__about_span {
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */
