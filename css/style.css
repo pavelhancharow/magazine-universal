@@ -3125,6 +3125,8 @@ template {
   height: 180px;
   margin-bottom: 10px;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .articles-block__title {
@@ -3631,6 +3633,15 @@ template {
   br {
     display: none;
   }
+  .articles {
+    padding: 50px 0;
+  }
+  .articles-block {
+    max-width: 230px;
+  }
+  .articles-block__title {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -4099,6 +4110,12 @@ template {
   }
   .support {
     padding-bottom: 40px;
+  }
+  .articles {
+    padding: 40px 0;
+  }
+  .articles-block {
+    max-width: 165px;
   }
 }
 
@@ -4617,6 +4634,18 @@ template {
   .support {
     padding-bottom: 30px;
   }
+  .articles {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .articles-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .articles-block {
+    max-width: 270px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 618px) {
@@ -5030,6 +5059,13 @@ template {
   .paragraph-text__part2 {
     max-width: 60%;
   }
+  .articles-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .articles-block {
+    max-width: 260px;
+  }
 }
 
 @media (max-width: 551px) {
@@ -5119,6 +5155,15 @@ template {
     top: -56px;
     right: 0;
   }
+  .articles-block {
+    max-width: 235px;
+  }
+}
+
+@media (max-width: 500px) {
+  .articles-block {
+    max-width: 223px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -5165,6 +5210,9 @@ template {
     padding-right: 15px;
     margin-left: 21px;
     font-size: 13px;
+  }
+  .articles-block {
+    max-width: 190px;
   }
 }
 
@@ -5363,10 +5411,6 @@ template {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  .hero {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .hero-bg::before {
     display: none;
   }
@@ -5415,9 +5459,6 @@ template {
   }
   .hero-about__share {
     margin-left: auto;
-  }
-  .paragraph {
-    padding-top: 20px;
   }
   .paragraph-text:not(:last-of-type) {
     margin-bottom: 20px;
@@ -5527,6 +5568,26 @@ template {
   .support-social__more {
     width: 36px;
     height: 36px;
+  }
+  .articles-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .articles-block {
+    max-width: 263px;
+  }
+  .articles-block__title {
+    font-size: 16px;
   }
 }
 
