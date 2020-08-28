@@ -1,5 +1,6 @@
 @media ( max-width: 1200px )
-  .container
+  .container,
+  .container2
     max-width: 960px
   .header
     &-top
@@ -114,10 +115,25 @@
   .article
     &-information
       padding: 20px 16px
+  .hero
+    height: 100%
+    padding-top: 50px
+    padding-bottom: 50px
+    &-bg
+      &::before
+        top: 0
+        left: auto
+        right: 50%
+        transform: translateX(150%)
+    &-title
+      max-width: 555px
+      font-size: 45px
+      line-height: 55px
 @media ( max-width: 992px )
   body
     padding-top: 135px
-  .container
+  .container,
+  .container2
     max-width: 700px
   .header
     &-top
@@ -334,6 +350,36 @@
       &__list
         &:not(:last-child)
           margin-right: 15px
+  .hero
+    padding-top: 40px
+    padding-bottom: 40px
+    &-bg
+      &::before
+        right: 40%
+    &-header
+      align-items: center
+      margin-bottom: 30px
+      &__nav
+        flex-wrap: wrap
+        &_back
+          justify-content: flex-end
+          flex-basis: 100%
+          margin-right: 17px
+          margin-bottom: 10px
+        &_prev
+          justify-content: flex-end
+          margin-right: 10px
+          flex-basis: 70%
+        &_next
+          flex-basis: 25%
+          justify-content: flex-start
+    &-title
+      max-width: 500px
+      font-size: 40px
+      line-height: 50px
+    &-text
+      max-width: 450px
+      margin-bottom: 35px
 @media ( max-width: 767px )
   body
     padding-top: 124px
@@ -612,10 +658,30 @@
         margin-bottom: 10px
         &:not(:last-child)
           margin-right: 0
+  .container2
+    max-width: 576px
+  .hero
+    padding-top: 30px
+    padding-bottom: 30px
+    &-bg
+      &::before
+        top: 10px
+        right: 50%
+        transform: translateX(60px)
+    &-title
+      max-width: 380px
+      font-size: 30px
+      line-height: 40px
+    &-text
+      max-width: 370px
+      margin-bottom: 30px
+      font-size: 16px
+      line-height: 25px
 @media ( max-width: 576px )
   body
     padding-top: 116px
-  .container
+  .container,
+  .container2
     max-width: 97%
   .header
     &-top
@@ -854,6 +920,20 @@
       &__list
         margin-bottom: 0
         flex-basis: auto
+  .hero
+    &-bg
+      &::before
+        top: 24%
+        right: 2%
+        transform: translateX(0)
+    &-header
+      &__nav
+        &_back
+          font-size: 13px
+        &_prev
+          font-size: 13px
+        &_next
+          font-size: 13px
 @media ( max-width: 551px )
   .side-bar
     &__list
@@ -893,8 +973,32 @@
     &-item
       &__link
         font-size: 13px
+  .hero
+    &-bg
+      &::before
+        top: 27%
+    &-title
+      max-width: 315px
+      font-size: 25px
+      line-height: 30px
+    &-text
+      max-width: 315px
+      margin-bottom: 30px
+      font-size: 14px
+      line-height: 20px
+    &-about
+      &__span
+        &:not(:last-of-type)
+          margin-right: 10px
+      &__share
+        max-width: 125px
+        padding-left: 15px
+        padding-right: 15px
+        margin-left: 21px
+        font-size: 13px
 @media ( max-width: 425px )
-  .container
+  .container,
+  .container2
     max-width: 94%
   .header
     &-top
@@ -1047,6 +1151,39 @@
       margin-bottom: 0
       &__list
         flex-basis: 50%
+  .hero
+    padding-top: 20px
+    padding-bottom: 20px
+    &-bg
+      &::before
+        display: none
+    &-header
+      flex-direction: column
+      align-items: flex-start
+      &__group
+        margin-top: 0
+        order: 1
+      &__nav
+        width: 100%
+        margin-bottom: 20px
+        flex-wrap: nowrap
+        &_back
+          margin: 0
+          flex-basis: auto
+        &_prev
+          flex-basis: auto
+          margin-left: auto
+        &_next
+          flex-basis: auto
+    &-title
+      max-width: 280px
+      margin-bottom: 20px
+      font-size: 23px
+    &-text
+      max-width: 280px
+    &-about
+      &__share
+        margin-left: auto
 @media ( max-width: 375px )
   .secondary
     &-director
@@ -1175,13 +1312,25 @@
     &-group
       &__footer
         width: 320px
+  .hero
+    &-text
+      margin-bottom: 20px
+    &-about
+      flex-direction: column
+      align-items: flex-start
+      &__container
+        order: 1
+      &__share
+        margin-left: 0
+        margin-bottom: 15px
 @media ( max-width: 334px )
   .footer
     &-social
       &__logo
         margin-right: 15px
 @media ( max-width: 320px )
-  .container
+  .container,
+  .container2
     max-width: 91%
   .header
     &-top
