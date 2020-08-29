@@ -47,6 +47,7 @@
       width: 242px
     &-content
       z-index: 10
+    &-info
       &__author
         margin-right: 8px
       &__name
@@ -140,7 +141,8 @@
         top: -130px
         width: 233px
     &-geography
-      padding-bottom: 45px
+      &__part1
+        padding-bottom: 45px
       &__part2
         padding-bottom: 55px
       &__part3
@@ -243,7 +245,7 @@
     &::after
       width: 241px
       height: 264px
-    &-content
+    &-info
       &__author
         width: 40px
         height: 40px
@@ -447,7 +449,8 @@
       &__next
         right: 20px
     &-geography
-      padding-bottom: 35px
+      &__part1
+        padding-bottom: 35px
       &__part2
         padding-bottom: 35px
       &__part3
@@ -552,6 +555,7 @@
       &__content
         max-width: 182px
         margin-bottom: 15px
+    &-info
       &__author
         width: 30px
         height: 30px
@@ -792,7 +796,8 @@
       &__author
         padding: 0 10px
     &-geography
-      padding-bottom: 30px
+      &__part1
+        padding-bottom: 30px
       &__part2
         padding-top: 30px
       &__part3
@@ -931,7 +936,7 @@
     grid-column: 1 / 13
     &::after
       width: 245px
-    &-content
+    &-info
       &__author
         width: 40px
         height: 40px
@@ -1288,9 +1293,6 @@
   .header
     &-top
       &__search
-        &_input
-          width: 100%
-          padding-left: 85px
         &_active
           display: none
     &-bottom
@@ -1305,6 +1307,18 @@
         height: 40px
         border-radius: 10px
         overflow: hidden
+        &_input
+          width: 100%
+          height: 100%
+          padding-left: 85px
+          font-family: 'Lato-Regular', sans-serif
+          color: $grey50
+          border: none
+          outline: none
+          text-overflow: ellipsis
+          &::placeholder
+            font-family: 'Lato-Regular', sans-serif
+            color: $grey50
   .button
     &-search
       width: 70px
@@ -1346,6 +1360,7 @@
         width: 112px
   .article
     padding: 12px 12px
+    height: 100%
   .side-bar
     &__item
       align-items: center
@@ -1485,7 +1500,8 @@
         margin-bottom: 20px
         transform: translateX(-50%)
     &-geography
-      padding-bottom: 20px
+      &__part1
+        padding-bottom: 20px
       &__title
         margin-bottom: 20px
       &__part2
@@ -1594,7 +1610,7 @@
   .cars
     &::after
       width: 128px
-    &-content
+    &-info
       &__author
         width: 45px
         height: 45px
@@ -1773,12 +1789,12 @@
     max-width: 91%
   .header
     &-top
-      &__search
-        &_input
-          padding-left: 65px
       &__date
         font-size: 11px
     &-bottom
+      &__search
+        &_input
+          padding-left: 65px
       &__item
         padding: 0 15px
   .button

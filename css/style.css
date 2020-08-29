@@ -1196,11 +1196,11 @@ template {
   margin-bottom: 49px;
 }
 
-.cars-content__author {
+.cars-info__author {
   margin-right: 10px;
 }
 
-.cars-content__about {
+.cars-info__about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1210,13 +1210,13 @@ template {
   margin-right: 15px;
 }
 
-.cars-content__name {
+.cars-info__name {
   margin-right: 6px;
   font-family: 'Lato-Heavy', sans-serif;
   color: #262D33;
 }
 
-.cars-content__comment {
+.cars-info__comment {
   margin-left: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2733,7 +2733,7 @@ template {
   color: #262D33;
 }
 
-.paragraph-geography {
+.paragraph-geography__part1 {
   padding-bottom: 59px;
 }
 
@@ -3493,13 +3493,13 @@ template {
   .cars-content {
     z-index: 10;
   }
-  .cars-content__author {
+  .cars-info__author {
     margin-right: 8px;
   }
-  .cars-content__name {
+  .cars-info__name {
     font-size: 12px;
   }
-  .cars-content__about {
+  .cars-info__about {
     font-size: 12px;
   }
   .cars-block__top {
@@ -3608,7 +3608,7 @@ template {
     top: -130px;
     width: 233px;
   }
-  .paragraph-geography {
+  .paragraph-geography__part1 {
     padding-bottom: 45px;
   }
   .paragraph-geography__part2 {
@@ -3759,17 +3759,17 @@ template {
     width: 241px;
     height: 264px;
   }
-  .cars-content__author {
+  .cars-info__author {
     width: 40px;
     height: 40px;
     margin-right: 10px;
   }
-  .cars-content__name {
+  .cars-info__name {
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-size: 14px;
   }
-  .cars-content__about {
+  .cars-info__about {
     -ms-flex-item-align: start;
         align-self: flex-start;
     max-width: 202px;
@@ -4083,7 +4083,7 @@ template {
   .paragraph-button__next {
     right: 20px;
   }
-  .paragraph-geography {
+  .paragraph-geography__part1 {
     padding-bottom: 35px;
   }
   .paragraph-geography__part2 {
@@ -4224,17 +4224,17 @@ template {
     max-width: 182px;
     margin-bottom: 15px;
   }
-  .cars-content__author {
+  .cars-info__author {
     width: 30px;
     height: 30px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .cars-content__name {
+  .cars-info__name {
     font-size: 12px;
     margin-right: 5px;
   }
-  .cars-content__about {
+  .cars-info__about {
     max-width: 169px;
     margin-right: 5px;
     font-size: 12px;
@@ -4597,7 +4597,7 @@ template {
   .paragraph-photos__author {
     padding: 0 10px;
   }
-  .paragraph-geography {
+  .paragraph-geography__part1 {
     padding-bottom: 30px;
   }
   .paragraph-geography__part2 {
@@ -4774,15 +4774,15 @@ template {
   .cars::after {
     width: 245px;
   }
-  .cars-content__author {
+  .cars-info__author {
     width: 40px;
     height: 40px;
   }
-  .cars-content__name {
+  .cars-info__name {
     font-size: 12px;
     min-width: 77px;
   }
-  .cars-content__about {
+  .cars-info__about {
     max-width: 185px;
     margin-right: auto;
     font-size: 12px;
@@ -5287,10 +5287,6 @@ template {
   .container2 {
     max-width: 94%;
   }
-  .header-top__search_input {
-    width: 100%;
-    padding-left: 85px;
-  }
   .header-top__search_active {
     display: none;
   }
@@ -5311,6 +5307,32 @@ template {
     height: 40px;
     border-radius: 10px;
     overflow: hidden;
+  }
+  .header-bottom__search_input {
+    width: 100%;
+    height: 100%;
+    padding-left: 85px;
+    font-family: 'Lato-Regular', sans-serif;
+    color: #939699;
+    border: none;
+    outline: none;
+    text-overflow: ellipsis;
+  }
+  .header-bottom__search_input::-webkit-input-placeholder {
+    font-family: 'Lato-Regular', sans-serif;
+    color: #939699;
+  }
+  .header-bottom__search_input:-ms-input-placeholder {
+    font-family: 'Lato-Regular', sans-serif;
+    color: #939699;
+  }
+  .header-bottom__search_input::-ms-input-placeholder {
+    font-family: 'Lato-Regular', sans-serif;
+    color: #939699;
+  }
+  .header-bottom__search_input::placeholder {
+    font-family: 'Lato-Regular', sans-serif;
+    color: #939699;
   }
   .button-search {
     width: 70px;
@@ -5355,6 +5377,7 @@ template {
   }
   .article {
     padding: 12px 12px;
+    height: 100%;
   }
   .side-bar__item {
     -webkit-box-align: center;
@@ -5543,7 +5566,7 @@ template {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .paragraph-geography {
+  .paragraph-geography__part1 {
     padding-bottom: 20px;
   }
   .paragraph-geography__title {
@@ -5699,21 +5722,21 @@ template {
   .cars::after {
     width: 128px;
   }
-  .cars-content__author {
+  .cars-info__author {
     width: 45px;
     height: 45px;
   }
-  .cars-content__name {
+  .cars-info__name {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin-right: auto;
     font-size: 14px;
   }
-  .cars-content__name_span {
+  .cars-info__name_span {
     display: none;
   }
-  .cars-content__about {
+  .cars-info__about {
     display: none;
   }
   .art {
@@ -5962,11 +5985,11 @@ template {
   .container2 {
     max-width: 91%;
   }
-  .header-top__search_input {
-    padding-left: 65px;
-  }
   .header-top__date {
     font-size: 11px;
+  }
+  .header-bottom__search_input {
+    padding-left: 65px;
   }
   .header-bottom__item {
     padding: 0 15px;
