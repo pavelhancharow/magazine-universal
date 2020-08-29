@@ -3213,16 +3213,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 20px;
   border-top: 1px solid #D9DADB;
   border-right: 1px solid transparent;
-}
-
-.comments-item__list:not(:last-of-type) {
   padding-bottom: 29px;
 }
 
@@ -3234,6 +3229,7 @@ template {
   padding-left: 90px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding-bottom: 0px;
 }
 
 .comments-item__img {
@@ -3347,7 +3343,7 @@ template {
 
 .comments-form {
   position: relative;
-  width: 585px;
+  max-width: 585px;
 }
 
 .comments-form__textarea {
@@ -4646,6 +4642,23 @@ template {
     max-width: 270px;
     margin-bottom: 20px;
   }
+  .comments {
+    padding-top: 50px;
+  }
+  .comments-item__description {
+    max-width: 495px;
+  }
+  .comments-item__description_message {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .comments-item__list_reply {
+    padding-left: 60px;
+  }
+  .user75 {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 @media (max-width: 618px) {
@@ -5066,6 +5079,25 @@ template {
   .articles-block {
     max-width: 260px;
   }
+  .comments {
+    padding-top: 40px;
+  }
+  .comments-header__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .comments-header__num {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .comments-header__link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+  .comments-item__description {
+    max-width: 410px;
+  }
 }
 
 @media (max-width: 551px) {
@@ -5163,6 +5195,40 @@ template {
 @media (max-width: 500px) {
   .articles-block {
     max-width: 223px;
+  }
+  .comments {
+    padding-top: 30px;
+  }
+  .comments-header__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .comments-header__num {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .comments-item__description {
+    max-width: 347px;
+  }
+  .comments-item__description_name {
+    font-size: 15px;
+  }
+  .comments-item__description_message {
+    font-size: 15px;
+  }
+  .comments-button {
+    margin-bottom: 40px;
+  }
+  .comments-message {
+    padding: 20px 25px 25px 85px;
+  }
+  .comments-message__user {
+    top: 75px;
+    left: 15px;
+  }
+  .user75 {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -5589,6 +5655,24 @@ template {
   .articles-block__title {
     font-size: 16px;
   }
+  .comments-item__list_reply {
+    padding-left: 30px;
+  }
+  .comments-item__description {
+    max-width: 80%;
+  }
+  .comments-item__description_name {
+    line-height: 22px;
+  }
+  .comments-item__description_message {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .user75 {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5806,6 +5890,14 @@ template {
     margin-left: 0;
     margin-bottom: 15px;
   }
+  .comments-header__title, .comments-header__num {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .comments-header__link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -5825,11 +5917,43 @@ template {
   .support-social__img {
     margin-right: 5px;
   }
+  .comments-message {
+    padding: 20px 20px 20px 85px;
+  }
+  .comments-message__title {
+    font-size: 18px;
+  }
+  .comments-form__submit {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .textarea-group {
+    height: 90px;
+  }
 }
 
 @media (max-width: 334px) {
   .footer-social__logo {
     margin-right: 15px;
+  }
+  .comments-header__title {
+    margin-right: 7px;
+  }
+  .comments-header__img {
+    margin-right: 5px;
+  }
+  .comments-item__list_reply {
+    padding-left: 25px;
+  }
+  .comments-description {
+    max-width: 75%;
+  }
+  .comments-message {
+    padding-left: 75px;
+  }
+  .user75 {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -5861,6 +5985,12 @@ template {
   }
   .paragraph-photos__about_span {
     font-size: 11px;
+  }
+  .comments-header__title, .comments-header__num {
+    font-size: 23px;
+  }
+  .comments-item__description_name {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

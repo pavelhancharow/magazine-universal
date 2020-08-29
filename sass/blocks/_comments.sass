@@ -32,18 +32,17 @@
     margin-top: 29px
     &__list
       display: flex
-      flex-basis: 100%
       flex-wrap: wrap
       padding-top: 20px
       border-top: 1px solid $grey15
       border-right: 1px solid transparent
-      &:not(:last-of-type)
-        padding-bottom: 29px
+      padding-bottom: 29px
       &_hidden
         display: none
       &_reply
         padding-left: 90px
         flex-wrap: nowrap
+        padding-bottom: 0px
     &__img
       margin-right: 15px
     &__description
@@ -110,7 +109,7 @@
       color: $grey100
   &-form
     position: relative
-    width: 585px
+    max-width: 585px
     &__textarea
       position: absolute
       top: 0

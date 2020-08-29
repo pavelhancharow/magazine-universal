@@ -826,6 +826,20 @@
     &-block
       max-width: 270px
       margin-bottom: 20px
+  .comments
+    padding-top: 50px
+    &-item
+      &__description
+        max-width: 495px
+        &_message
+          font-size: 16px
+          line-height: 25px
+      &__list
+        &_reply
+          padding-left: 60px
+  .user75
+    width: 55px
+    height: 55px
 @media ( max-width: 618px )
   .quote
     &::before
@@ -1099,6 +1113,22 @@
       justify-content: space-around
     &-block
       max-width: 260px
+  .comments
+    padding-top: 40px
+    &-header
+      &__title
+        font-size: 30px
+        line-height: 40px
+      &__num
+        font-size: 30px
+        line-height: 40px
+      &__link
+        padding-left: 15px
+        padding-right: 15px
+        font-size: 13px
+    &-item
+      &__description
+        max-width: 410px
 @media ( max-width: 551px )
   .side-bar
     &__list
@@ -1177,6 +1207,32 @@
   .articles
     &-block
       max-width: 223px
+  .comments
+    padding-top: 30px
+    &-header
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__num
+        font-size: 28px
+        line-height: 36px
+    &-item
+      &__description
+        max-width: 347px
+        &_name
+          font-size: 15px
+        &_message
+          font-size: 15px
+    &-button
+      margin-bottom: 40px
+    &-message
+      padding: 20px 25px 25px 85px
+      &__user
+        top: 75px
+        left: 15px
+  .user75
+    width: 50px
+    height: 50px
 @media ( max-width: 475px )
   .newsfeed
     &-column
@@ -1496,6 +1552,22 @@
       max-width: 263px
       &__title
         font-size: 16px
+  .comments
+    &-item
+      &__list
+        &_reply
+          padding-left: 30px
+      &__description
+        max-width: 80%
+        &_name
+          line-height: 22px
+        &_message
+          font-size: 14px
+          line-height: 20px
+          width: 100%
+  .user75
+    width: 45px
+    height: 45px
 @media ( max-width: 375px )
   .secondary
     &-director
@@ -1635,6 +1707,15 @@
       &__share
         margin-left: 0
         margin-bottom: 15px
+  .comments
+    &-header
+      &__title,
+      &__num
+        font-size: 25px
+        line-height: 30px
+      &__link
+        padding-left: 10px
+        padding-right: 10px
 @media ( max-width: 350px )
   .paragraph
     &-button
@@ -1652,12 +1733,40 @@
         padding: 8px 5px
       &__img
         margin-right: 5px
-
+  .comments
+    &-message
+      padding: 20px 20px 20px 85px
+      &__title
+        font-size: 18px
+    &-form
+      &__submit
+        padding-left: 15px
+        padding-right: 15px
+  .textarea
+    &-group
+      height: 90px
 @media ( max-width: 334px )
   .footer
     &-social
       &__logo
         margin-right: 15px
+  .comments
+    &-header
+      &__title
+        margin-right: 7px
+      &__img
+        margin-right: 5px
+    &-item
+      &__list
+        &_reply
+          padding-left: 25px
+    &-description
+      max-width: 75%
+    &-message
+      padding-left: 75px
+  .user75
+    width: 40px
+    height: 40px
 @media ( max-width: 320px )
   .container,
   .container2
@@ -1692,3 +1801,12 @@
       &__about
         &_span
           font-size: 11px
+  .comments
+    &-header
+      &__title,
+      &__num
+        font-size: 23px
+    &-item
+      &__description
+        &_name
+          font-size: 14px
