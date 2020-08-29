@@ -14,6 +14,21 @@ $(document).ready(function () {
     $(this).toggleClass('newsfeed-card__content_save');
   });
 
+  // likes count
+  var btnLike = $('.support-social__like');
+  var likeCount = $('.support-social__count');
+
+  btnLike.on('click', function () {
+    if (btnLike.hasClass('like')) {
+      var value = parseInt($(likeCount).text(), 10) - 1;
+      $(likeCount).text(value);
+    } else {
+      value = parseInt($(likeCount).text(), 10) + 1;
+      $(likeCount).text(value);
+    }
+    btnLike.toggleClass('like');
+  });
+
   // Read more Comments
   var commentsButton = $('.comments-button');
   var hiddenComments = $('.comments-item__list_hidden');
