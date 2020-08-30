@@ -866,6 +866,7 @@ template {
   padding-bottom: 95px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tabs-content::before {
@@ -2436,14 +2437,32 @@ template {
 }
 
 .hero {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/bike-bg.png);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/bike-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+}
+
+.hero-bike {
+  background-image: url(../img/bg/bike-bg.png);
+}
+
+.hero-mustang {
+  background-image: url(../img/bg/template-bg.jpg);
 }
 
 .hero-bg {
