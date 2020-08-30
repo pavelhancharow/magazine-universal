@@ -5,6 +5,7 @@
   &-grid
     display: grid
     grid-template-columns: repeat(12, 1fr)
+    grid-auto-rows: auto
     grid-column-gap: 30px
     grid-row-gap: 30px
     transform: translateY(-285px)
@@ -365,10 +366,9 @@
       padding: 20px 0 19px 25px
       border-bottom: 1px solid $greyblue
     &__bottom
-      display: flex
-      justify-content: center
-      align-items: center
-      height: 45px
+      padding-top: 12px
+      padding-bottom: 12px
+      text-align: center
       border-top: 1px solid $greyblue
     &__title
       font-size: 14px
