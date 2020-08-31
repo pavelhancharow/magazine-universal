@@ -887,7 +887,7 @@ template {
 }
 
 .tabs-content__food {
-  background-image: url(../img/bg/england-bg.png);
+  background-image: url(../img/bg/england-bg.jpg);
 }
 
 .tabs-content__cars {
@@ -1144,7 +1144,7 @@ template {
   right: 0;
   width: 292px;
   height: 299px;
-  background-image: url(../img/car.png);
+  background-image: url(../img/car.jpg);
 }
 
 .cars-block__top {
@@ -1249,8 +1249,8 @@ template {
   width: 100%;
   padding-left: 25px;
   padding-bottom: 25px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/hand-bg.png);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/hand-bg.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/hand-bg.jpg);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/hand-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1592,8 +1592,8 @@ template {
           justify-content: center;
   width: 100%;
   height: 270px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/flower-bg.png);
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/flower-bg.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/bg/flower-bg.jpg);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/bg/flower-bg.jpg);
   background-position: center;
   background-size: 102%;
   background-repeat: no-repeat;
@@ -1960,7 +1960,7 @@ template {
 }
 
 .information-block__slide2 {
-  background-image: url(../img/bg/boat-bg.png);
+  background-image: url(../img/bg/boat-bg.jpg);
 }
 
 .information-block__slide2::before {
@@ -2049,7 +2049,7 @@ template {
   padding-top: 35px;
   padding-left: 35px;
   padding-bottom: 45px;
-  background-image: url(../img/bg/woman-bg.png);
+  background-image: url(../img/bg/woman-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2458,7 +2458,7 @@ template {
 }
 
 .hero-bike {
-  background-image: url(../img/bg/bike-bg.png);
+  background-image: url(../img/bg/bike-bg.jpg);
 }
 
 .hero-mustang {
