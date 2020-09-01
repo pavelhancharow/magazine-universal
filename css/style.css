@@ -673,6 +673,8 @@ template {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .subscribe-background {
@@ -3626,6 +3628,32 @@ template {
 .input-group__sign {
   margin-bottom: 20px;
   margin-right: 0;
+}
+
+@media (min-width: 993px) {
+  .header-bottom__link:hover {
+    color: #6E99AE;
+  }
+  .footer-menu__list {
+    position: relative;
+  }
+  .footer-menu__list:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #4B5157;
+    visibility: hidden;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  .footer-menu__list:hover::after {
+    visibility: visible;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {

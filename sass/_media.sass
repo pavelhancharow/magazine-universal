@@ -1,3 +1,27 @@
+@media ( min-width: 993px )
+  .header
+    &-bottom
+      &__link
+        &:hover
+          color: $grey75
+  .footer
+    &-menu
+      &__list
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          display: block
+          bottom: -3px
+          left: 0
+          width: 0%
+          height: 1px
+          background-color: $grey85
+          visibility: hidden
+          transition: width 0.3s
+        &:hover::after
+          visibility: visible
+          width: 100%
 @media ( max-width: 1200px )
   .container,
   .container2
