@@ -26,14 +26,14 @@
             <input type="search" class="header-top__search_input" placeholder="Search">
           </form>
           <!-- /.header-top__search -->
-          <a href="#" class="user">
+          <button class="user button" data-href="#sign-in">
             <img src="img/svg/user.svg" alt="icon: user">
             <span class="user__signin">Sign In</span>
-          </a>
+          </button>
           <!-- /.user -->
           <a href="#" class="header-top__subscribe">
-            <div class="subscribe-background"><img src="img/bike-subscribe.jpg" loading="lazy" alt="article-subscribe"
-                class="subscribe-img"></div>
+            <div class="subscribe-background"><img src="#" data-src="img/bike-subscribe.jpg" alt="article-subscribe"
+                class="subscribe-img lazy"></div>
             <div class="subscribe-description">
               <h4 class="subscribe-title">Subscribe Now</h4>
               <span class="subscribe-subtitle">3 month for $19</span>
@@ -47,7 +47,7 @@
         <!-- /.line-horizontal -->
         <div class="header-top__secondary">
           <div class="secondary-director">
-            <img src="img/freedom.jpg" alt="icon: freedom" class="secondary-director__img">
+            <img src="#" data-src="img/freedom.jpg" alt="icon: freedom" class="secondary-director__img lazy">
             <span class="secondary-description">Boston and New York Bear Brunt</span>
           </div>
           <!-- /.secondary-director -->
@@ -732,6 +732,27 @@
     </div>
     <!-- /.container -->
   </footer>
+  <div class="sign-in" id="sign-in">
+    <div class="sign-in__overlay"></div>
+    <div class="sign-in__modal">
+      <div class="sign-in__logo"><img src="img/svg/logo.svg" alt="image: logo" class="sign-in__logo_img"></div>
+      <form action="send.php" method="POST" class="sign-in__form form">
+        <div class="input-group input-group__sign"><input type="email" name="email" class="sign-in__input"
+            placeholder="E-mail" required></div>
+        <div class="input-group input-group__sign"><input type="password" name="password" class="sign-in__input"
+            placeholder="Password" required></div>
+        <div class="sign-in__buttons">
+          <input type="submit" class="button-modal button-modal__sign" name="singIn" value="Sign In">
+          <input type="reset" class="button-modal button-modal__reset" value="Reset">
+        </div>
+      </form>
+      <button class="button-modal button-modal__close">
+        <div class="button-modal__close_line button-modal__close_first"></div>
+        <div class="button-modal__close_line button-modal__close_second"></div>
+      </button>
+    </div>
+  </div>
+  <!-- /.sign-in -->
   <script src="script/jquery-3.5.1.slim.min.js"></script>
   <script src="script/jquery.fancybox.min.js"></script>
   <script src="script/swiper-bundle.min.js"></script>

@@ -3454,6 +3454,180 @@ template {
   margin-bottom: 15px;
 }
 
+.sign-in__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(217, 218, 219, 0.39);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.sign-in__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sign-in__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 80px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: 101;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.sign-in__modal_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sign-in__logo {
+  width: 184px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.sign-in__logo_img {
+  width: 100%;
+  height: 100%;
+}
+
+.sign-in__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+}
+
+.sign-in__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 1px solid #D9DADB;
+  outline: none;
+  text-overflow: ellipsis;
+}
+
+.sign-in__input::-webkit-input-placeholder {
+  font-family: 'Lato-Regular', sans-serif;
+  color: #4B5157;
+}
+
+.sign-in__input:-ms-input-placeholder {
+  font-family: 'Lato-Regular', sans-serif;
+  color: #4B5157;
+}
+
+.sign-in__input::-ms-input-placeholder {
+  font-family: 'Lato-Regular', sans-serif;
+  color: #4B5157;
+}
+
+.sign-in__input::placeholder {
+  font-family: 'Lato-Regular', sans-serif;
+  color: #4B5157;
+}
+
+.sign-in__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button-modal {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Lato-Heavy', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #4592FF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-modal__sign {
+  width: 138px;
+}
+
+.button-modal__reset {
+  width: 88px;
+  background-color: #4B5157;
+}
+
+.button-modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.button-modal__close_line {
+  width: 20px;
+  height: 2px;
+  background-color: #262D33;
+}
+
+.button-modal__close_first {
+  -webkit-transform: rotate(45deg) translate(0px, 2px);
+          transform: rotate(45deg) translate(0px, 2px);
+}
+
+.button-modal__close_second {
+  -webkit-transform: rotate(-45deg) translate(0px, -1px);
+          transform: rotate(-45deg) translate(0px, -1px);
+}
+
+.input-group {
+  max-width: 100%;
+}
+
+.input-group__sign {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
 @media (max-width: 1200px) {
   .container,
   .container2 {
@@ -5108,6 +5282,12 @@ template {
   .comments-item__description {
     max-width: 410px;
   }
+  .sign-in__form {
+    max-width: 300px;
+  }
+  .sign-in__modal {
+    padding: 30px 40px;
+  }
 }
 
 @media (max-width: 551px) {
@@ -5707,6 +5887,9 @@ template {
     width: 45px;
     height: 45px;
   }
+  .sign-in__form {
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5963,6 +6146,15 @@ template {
   }
   .textarea-group {
     height: 90px;
+  }
+  .sign-in__form {
+    width: 235px;
+  }
+  .sign-in__modal {
+    padding: 30px 30px;
+  }
+  .button-modal__sign {
+    width: 118px;
   }
 }
 

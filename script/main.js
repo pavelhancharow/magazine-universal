@@ -71,6 +71,35 @@ $(document).ready(function () {
     $('.secondary-director').toggleClass('secondary-director_active');
   });
 
+  //sign in modal
+  var openBtn = $('.user');
+  var closeBtn = $('.button-modal__close');
+  var overlay = $('.sign-in__overlay');
+  openBtn.on('click', openSingIn);
+  closeBtn.on('click', closeSingIn);
+  overlay.on('click', closeSingIn);
+
+  function openSingIn() {
+    var targetModal = $(this).attr('data-href');
+    $(targetModal).find('.sign-in__overlay').addClass('sign-in__overlay_visible');
+    $(targetModal).find('.sign-in__modal').addClass('sign-in__modal_visible');
+  }
+
+  function closeSingIn(event) {
+    event.preventDefault();
+    var modalOverlay = $('.sign-in__overlay');
+    var modalUser = $('.sign-in__modal');
+    modalOverlay.removeClass('sign-in__overlay_visible');
+    modalUser.removeClass('sign-in__modal_visible');
+  }
+
+  $(document).keydown(function (e) {
+    if (e.keyCode == 27) {
+      $(".sign-in__overlay").removeClass("sign-in__overlay_visible");
+      $(".sign-in__modal").removeClass("sign-in__modal_visible");
+    }
+  });
+
   $(window).scroll(function () {
     var height = $(window).scrollTop();
     /*Если сделали скролл на 100px задаём новый класс для header*/
@@ -177,6 +206,10 @@ $(document).ready(function () {
         message: {
           required: true,
           minlength: 100
+        },
+        password: {
+          required: true,
+          minlength: 10
         }
       },
       messages: {
@@ -186,7 +219,11 @@ $(document).ready(function () {
         },
         message: {
           required: "* Enter your message",
-          minlength: "* More than 100 letters long",
+          minlength: "* More than 100 letters long"
+        },
+        password: {
+          required: "* Enter password",
+          minlength: "* More than 10 letters long"
         }
       },
     });
