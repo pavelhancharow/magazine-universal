@@ -129,12 +129,12 @@
     &-block
       &__slider
         height: 560px
-      &__slide
-        padding-left: 25px
-        padding-right: 25px
-        padding-bottom: 80px
-        &_title
-          margin-bottom: 0
+      &__content
+        height: 385px
+  .slider
+    &-content
+      &__title
+        margin-bottom: 0
       &__link
         margin-top: auto
   .article
@@ -674,15 +674,18 @@
     &-block
       &__slider
         height: 430px
-      &__slide
-        &_title
-          font-size: 30px
-          line-height: 40px
+      &__content
+        height: 285px
       &__career
         padding: 25px 20px
         &_title
           max-width: 200px
           font-size: 22px
+  .slider
+    &-content
+      &__title
+        font-size: 30px
+        line-height: 40px
   .article
     &-information
       &__title
@@ -1050,6 +1053,8 @@
     padding-top: 30px
     padding-bottom: 30px
     &-block
+      &__content
+        width: 420px
       &__career
         grid-column: 1 / 13
         grid-row: 2 / 3
@@ -1447,14 +1452,18 @@
     &-block
       &__slider
         height: 370px
-      &__slide
-        padding-top: 25px
-        padding-bottom: 50px
+      &__content
+        top: 35px
+        width: 255px
+        height: 270px
+  .slider
+    &-content
+      &__about
         &_job
           margin-bottom: 23px
-        &_title
-          font-size: 25px
-          line-height: 30px
+      &__title
+        font-size: 25px
+        line-height: 30px
   .swiper
     &-pagination
       &-bullets
@@ -1702,9 +1711,6 @@
           line-height: 16px
   .information
     &-block
-      &__slide
-        padding-left: 15px
-        padding-right: 15px
       &__career
         padding: 15px 15px
         &_text
