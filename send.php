@@ -50,7 +50,7 @@ try {
     }
 
    // Отображение результата
-  header('Location: index.html');
+  header('Location: subscription.html');
 } else if (isset($_POST['appeal'])) {
   // Переменные, которые отправляет пользователь
   $message = $_POST['message'];
@@ -98,5 +98,5 @@ try {
   }
 
    // Отображение результата
-  header('Location: article.html');
+  header('Location: thankyou.html');
 }

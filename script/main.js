@@ -31,13 +31,12 @@ $(document).ready(function () {
 
   // Read more Comments
   var commentsButton = $('.comments-button');
-  var hiddenComments = $('.comments-item__list_hidden');
-  var loadMore = $('.comments-button__img');
+  var hiddenComments = $('.comments-item__list');
+
 
   commentsButton.on('click', function () {
-    commentsButton.removeClass('tabs-recomended__list_hidden');
-    $(loadMore).toggleClass('comments-button__img_rotate');
-    $(hiddenComments).toggleClass('comments-item__list_hidden');
+    hiddenComments.removeClass('comments-item__list_hidden');
+    commentsButton.addClass('comments-button__hidden');
   });
 
   // Read more Side bar
