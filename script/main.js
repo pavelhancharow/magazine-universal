@@ -22,6 +22,8 @@ $(document).ready(function () {
   // likes count
   var btnLike = $('.support-social__like');
   var likeCount = $('.support-social__count');
+  var heroLike = $('.hero-about__container_like');
+  var heroCount = $('.hero-about__span_count');
 
   btnLike.on('click', function () {
     if (btnLike.hasClass('like')) {
@@ -32,6 +34,17 @@ $(document).ready(function () {
       $(likeCount).text(value);
     }
     btnLike.toggleClass('like');
+  });
+
+  heroLike.on('click', function () {
+    if (heroLike.hasClass('like')) {
+      var value = parseInt($(heroCount).text(), 10) - 1;
+      $(heroCount).text(value);
+    } else {
+      value = parseInt($(heroCount).text(), 10) + 1;
+      $(heroCount).text(value);
+    }
+    heroLike.toggleClass('like');
   });
 
   // Read more Comments

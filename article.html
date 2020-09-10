@@ -124,12 +124,18 @@
         </p>
         <div class="hero-about">
           <div class="hero-about__container">
-            <img src="img/svg/clock.svg" alt="icon: clock" class="svg15">
-            <span class="hero-about__span">Aug 6, 10:23 pm</span>
-            <img src="img/svg/heart.svg" alt="icon: heart" class="svg15">
-            <span class="hero-about__span">830</span>
-            <img src="img/svg/comment.svg" alt="icon: comment" class="svg15">
-            <span class="hero-about__span">19</span>
+            <div class="hero-about__container_date">
+              <img src="img/svg/clock.svg" alt="icon: clock" class="svg15">
+              <span class="hero-about__span">Aug 6, 10:23 pm</span>
+            </div>
+            <button class="hero-about__container_like button">
+              <img src="img/svg/heart.svg" alt="icon: heart" class="svg15">
+              <span class="hero-about__span hero-about__span_count">830</span>
+            </button>
+            <a href="#comments" class="hero-about__container_comments button">
+              <img src="img/svg/comment.svg" alt="icon: comment" class="svg15">
+              <span class="hero-about__span">19</span>
+            </a>
           </div>
           <a href="#" class="hero-about__share">
             <img src="img/svg/share.svg" alt="icon: share" class="svg20">
@@ -447,7 +453,7 @@
     <!-- /.container -->
   </section>
   <!-- /.articles -->
-  <section class="comments">
+  <section class="comments" id="comments">
     <div class="container2">
       <div class="container3">
         <div class="comments-header">
