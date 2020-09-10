@@ -40,7 +40,7 @@ $(document).ready(function () {
   });
 
   // Read more Side bar
-  var sideBarButton = $('.side-bar__button');
+  var sideBarButton = $('.side-bar__bottom');
   var hiddenSideBar = $('.side-bar__list_hidden');
 
   sideBarButton.on('click', function () {
