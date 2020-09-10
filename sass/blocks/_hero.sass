@@ -22,11 +22,10 @@
     background-image: url(../img/bg/nflwinners-bg.jpg)
   &-bg
     position: relative
-    &::before
-      content: ""
+    &__bookmark
       position: absolute
       display: flex
-      top: 89px
+      top: 90px
       left: -97px
       width: 30px
       height: 30px
@@ -35,6 +34,9 @@
       background-position: center
       background-color: transparent
       opacity: 0.4
+      &_save
+        background-image: url(../img/svg/bookmark30-red.svg)
+        opacity: 0.9
   &-header
     display: flex
     justify-content: space-between
@@ -108,6 +110,7 @@
       margin-left: 31px
       border: 1px solid rgba($light, 0.4)
       border-radius: 20px
+      transition: all .3s
       &_num
         margin-left: 8px
         font-family: 'Lato-Heavy', sans-serif

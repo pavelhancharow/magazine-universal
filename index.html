@@ -31,7 +31,7 @@
             <span class="user__signin">Sign In</span>
           </button>
           <!-- /.user -->
-          <a href="#" class="header-top__subscribe">
+          <div class="header-top__subscribe button" data-href="#modal-subscribe">
             <div class="subscribe-background"><img src="#" data-src="img/bike-subscribe.jpg" alt="article-subscribe"
                 class="subscribe-img lazy"></div>
             <div class="subscribe-description">
@@ -39,7 +39,7 @@
               <span class="subscribe-subtitle">3 month for $19</span>
             </div>
             <!-- /.subscribe__description -->
-          </a>
+          </div>
           <!-- /.header-top__subscribe -->
         </div>
         <!-- /.header-top__primary -->
@@ -991,7 +991,7 @@
         <div class="input-group input-group__sign"><input type="password" name="password" class="sign-in__input"
             placeholder="Password" required></div>
         <div class="sign-in__buttons">
-          <input type="submit" class="button-modal button-modal__sign" name="singIn" value="Sign In">
+          <input type="submit" class="button-modal button-modal__sign button-hov" name="singIn" value="Sign In">
           <input type="reset" class="button-modal button-modal__reset" value="Reset">
         </div>
       </form>
@@ -1002,6 +1002,28 @@
     </div>
   </div>
   <!-- /.sign-in -->
+  <div class="sign-in" id="modal-subscribe">
+    <div class="sign-in__overlay"></div>
+    <div class="sign-in__modal">
+      <div class="sign-in__logo"><img src="img/svg/logo.svg" alt="image: logo" class="sign-in__logo_img"></div>
+      <h2 class="modal-subscribe__title">Subscribe now and get 20% off</h2>
+      <form action="send.php" method="POST" class="sign-in__form form">
+        <div class="input-group input-group__sign">
+          <input type="email" name="email" placeholder="Enter your email" class="sign-in__input" required>
+        </div>
+        <div class="sign-in__buttons">
+          <button type="submit" class="button-modal button-modal__sign button-hov" value="Subsribe"
+            name="subscribe">Subscribe</button>
+          <input type="reset" class="button-modal button-modal__reset" value="Reset">
+        </div>
+      </form>
+      <button class="button-modal button-modal__close">
+        <span class="button-modal__close_line button-modal__close_first"></span>
+        <span class="button-modal__close_line button-modal__close_second"></span>
+      </button>
+    </div>
+  </div>
+  <!-- /.modal-subscribe -->
   <script src="script/jquery-3.5.1.slim.min.js"></script>
   <script src="script/jquery.fancybox.min.js"></script>
   <script src="script/swiper-bundle.min.js"></script>

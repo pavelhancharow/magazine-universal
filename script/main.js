@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var tab = $('.tab');
   var save = $('.save');
+  var bookmarkSave = $('.hero-bg__bookmark');
 
   tab.on('click', function () {
     tab.removeClass('tabs-recomended__card_active');
@@ -12,6 +13,10 @@ $(document).ready(function () {
 
   save.on('click', function () {
     $(this).toggleClass('newsfeed-card__content_save');
+  });
+
+  bookmarkSave.on('click', function () {
+    $(this).toggleClass('hero-bg__bookmark_save');
   });
 
   // likes count
@@ -32,7 +37,6 @@ $(document).ready(function () {
   // Read more Comments
   var commentsButton = $('.comments-button');
   var hiddenComments = $('.comments-item__list');
-
 
   commentsButton.on('click', function () {
     hiddenComments.removeClass('comments-item__list_hidden');
@@ -74,9 +78,17 @@ $(document).ready(function () {
   var openBtn = $('.user');
   var closeBtn = $('.button-modal__close');
   var overlay = $('.sign-in__overlay');
+  var subscribeBtn = $('.header-top__subscribe');
+  subscribeBtn.on('click', openSubscribe);
   openBtn.on('click', openSingIn);
   closeBtn.on('click', closeSingIn);
   overlay.on('click', closeSingIn);
+
+  function openSubscribe() {
+    var targetModal = $(this).attr('data-href');
+    $(targetModal).find('.sign-in__overlay').addClass('sign-in__overlay_visible');
+    $(targetModal).find('.sign-in__modal').addClass('sign-in__modal_visible');
+  }
 
   function openSingIn() {
     var targetModal = $(this).attr('data-href');
@@ -145,6 +157,9 @@ $(document).ready(function () {
     // Optional parameters
     loop: false,
     speed: 400,
+    autoplay: {
+      delay: 2000,
+    },
     slidesPerView: 4,
     spaceBetween: 0,
     breakpoints: {
