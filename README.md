@@ -1,11 +1,25 @@
-Magazine Universal
+# "Magazine Universal" 
 
-Дипломный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
+## Thesis project for practice on the Web Start course from Glo Academy.
 
-Проект выполняет
+### Tasks:
 
-Павел Гончаров. Девятый поток курса Веб Старт. Тариф "Полный фарш" с куратором.
+- Responsive, Cross-Browser informational multi-page web site;
 
-Заказчик
+- Form Validation;
 
-Александр Семенов
+- A full-featured email creation and transfer;
+
+- Achieve more than 80 points in Google Pagespeed Insights;
+
+- Content Management System;
+
+### Libraries & Plugins:
+
+- jQuery Fancybox Plugin, Lazy-loading, Swiper API, jQuery Validation Plugin, jQuery Mask Plugin, PHPMailer SMTP
+
+### Links:
+
+[https://pavelhancharow.github.io/magazine-universal/](https://pavelhancharow.github.io/magazine-universal/)
+
+[https://pavelhancharou.ru/universal/](https://pavelhancharou.ru/universal/)
